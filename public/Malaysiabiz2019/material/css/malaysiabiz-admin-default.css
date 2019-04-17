@@ -1,0 +1,7 @@
+/*
+* Inline element
+*/
+.form-item-inline{
+    display: inline-block; 
+    padding-right: 30px;
+}

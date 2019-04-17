@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Mytracker</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- page CSS -->
+    <link href="../assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" />
+    <link href="../assets/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <link href="../assets/plugins/multiselect/css/multi-select.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="container" style="    width: 50%;
+    margin: 0 auto;">
+
+        <div class="clear"></div>
+	
+		        <nav class="sidebar-nav" style="float: right;">
+                            <ul id="sidebarnav">
+                                <li class="nav-small-cap">PERSONAL</li>
+                                <li>
+                                    <a class="has-arrow" href="admin_feedback_response.html">
+                                        <i class="ti-pie-chart"></i>
+                                        <span class="hide-menu">Question</span></a>
+                                </li>
+                           <!--      <li>
+                                    <a class="has-arrow" href="helpdesk2.html">
+                                        <i class="ti-briefcase"></i>
+                                        <span class="hide-menu">Response </span></a>
+                                </li> -->
+                        
+                               
+                        
+                            </ul>
+                        </nav>
+  
+                <div id="content">
+
+<div class="card-body">
+                    <br>
+                      <br>
+                        <br>
+                              
+                                    <form>
+                                        
+                                        
+                                        <div id="appen"></div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" value="Question">Question</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Question">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1"> Linear Scale </label>
+                                                  <input id="checkbox2" type="checkbox">
+                                                <label for="checkbox2"> Text Box </label>
+                                                
+
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="admin_feedback_response.html"><button type="button" class="btn btn-success waves-effect waves-light m-r-10">Submit</button></a>
+                                        <button id="addquestion" type="button" class="btn btn-inverse waves-effect waves-light">Add Question</button>
+                                    </form>
+                            
+                            </div>
+                            <script type="text/javascript">
+                                jQuery(document).ready(function(e) {
+                                    $("#addquestion").on("click", function(){
+                            
+                                       $('#appen').append('<div class="row"><div class="col-lg-12"><div class="form-group"><label for="exampleInputEmail1" value="Question">Question</label><input type="text" class="form-control" id="exampleInputEmail1" placeholder="Question"></div><div class="form-group"><div class="checkbox checkbox-success"><input id="checkbox1" type="checkbox"><label for="checkbox1"> Yes No </label><input id="checkbox2" type="checkbox"><label for="checkbox2"> Text Box </label></div></div></div></div>');
+                                    });
+                                      e.preventDefault();
+                                });
+                            </script>
+
+</body>
+
+</html>

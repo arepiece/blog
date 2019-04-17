@@ -1,0 +1,14 @@
+[
+    {
+        "section_code":"Section A",
+        "description_bm":"penerangan bm",
+        "description_bi":"penerangan bi",
+        "active":"true"
+    },
+    {
+        "section_code":"Section B",
+        "description_bm":"penerangan bm",
+        "description_bi":"penerangan bi",
+        "active":"false"
+    }
+]

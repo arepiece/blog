@@ -1,0 +1,50 @@
+[
+    {
+        "key":"111111",
+        "agency":"lam",
+        "professional_qualification":"architect",
+        "field_of_service":"field of service",
+        "business_type":"sole_proprietor",
+        "information":"information",
+        "registration_rules":"registration rules",
+        "payment":"payment",
+        "address":"address",
+        "validity_period":"validity period",
+        "act_and_regulation":"act and regulation",
+        "online_services_url":"online services url",
+        "others":"others",
+        "active":"false"
+    },
+    {
+        "key":"222222",
+        "agency":"lam",
+        "professional_qualification":"interior_designer",
+        "field_of_service":"field of service",
+        "business_type":"sole_proprietor",
+        "information":"information",
+        "registration_rules":"registration rules",
+        "payment":"payment",
+        "address":"address",
+        "validity_period":"validity period",
+        "act_and_regulation":"act and regulation",
+        "online_services_url":"online services url",
+        "others":"others",
+        "active":"true"
+    },
+    {
+        "key":"777777",
+        "agency":"lam",
+        "professional_qualification":"interior_designer",
+        "field_of_service":"field of service",
+        "business_type":"partnership",
+        "information":"information",
+        "registration_rules":"registration rules",
+        "payment":"payment",
+        "address":"address",
+        "validity_period":"validity period",
+        "act_and_regulation":"act and regulation",
+        "online_services_url":"online services url",
+        "others":"others",
+        "active":"true"
+    }
+]

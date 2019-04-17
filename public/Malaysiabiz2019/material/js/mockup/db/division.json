@@ -1,0 +1,16 @@
+[
+    {
+        "division_code":"C-A",
+        "section_code":"Section A",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "active":"true"
+    },
+    {
+        "division_code":"C-B",
+        "section_code":"Section B",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "active":"false"
+    }
+]

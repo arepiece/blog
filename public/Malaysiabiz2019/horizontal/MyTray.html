@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>MyTray</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border logo-center">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark">
+                            	<i class="ti-power-off"></i> Logout                                
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#">
+                            	<i class="ti-user"></i> Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+                        <div class="scroll-sidebar">
+                <div class="row">
+                    <div class="col-lg-4">
+                       <img src="../assets/images/logo-mbiz.png" style=" padding:10px; width:250px;" alt="homepage">
+                    </div>
+                    <div class="col-lg-8 m-t-20">
+                        <!-- Sidebar navigation-->
+                        <nav class="sidebar-nav" style="float: right;">
+                            <ul id="sidebarnav">
+                                <li class="nav-small-cap">PERSONAL</li>
+                                <li>
+                                    <a class="has-arrow" href="mydashboard.php">
+                                        <i class="ti-pie-chart"></i>
+                                        <span class="hide-menu">MyDashboard </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="mybisnes.php">
+                                        <i class="ti-briefcase"></i>
+                                        <span class="hide-menu">MyBusiness </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="MyTray.html">
+                                        <i class="ti-clipboard"></i>
+                                        <span class="hide-menu">MyTray </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow"href="mytracker.php
+">
+                                        <i class="ti-loop"></i>
+                                        <span class="hide-menu">MyTracker </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="MyLicense.php">
+                                        <i class="ti-files"></i>
+                                        <span class="hide-menu">My License </span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+             <div class="container-fluid" style="padding: 0 50px;">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+              <div class="row page-titles">
+                <div class="col-lg-12">
+                            <div class="row m-t-10">
+                                <div class="col-md-6 col-12">
+                                    <a href="/en/pelesenan" class="btn btn-info btn-circle"><i class="ti-plus"></i> </a>
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <div class="form-group has-success m-b-0">
+                                        <label style="font-size: 12px;"><i class="ti-filter"></i> Jenis Permohonan</label>
+                                            <select class="custom-select form-control form-control-sm" style="width: 120px;" id="inlineFormCustomSelect">
+                                                    <option selected="">Show All</option>
+                                                    <option value="1">Baru</option>
+                                                    <option value="2">Pembaharuan</option>
+                                                    <option value="3">Pindaan</option>
+                                                    <option value="1">Pembatalan</option>
+                                                    <option value="2">Cetakan Semula</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xs-12">
+                                    <div class="form-group has-success m-b-0">
+                                         <label style="font-size: 12px;"><i class="ti-filter"></i> Status</label>
+                                            <select class=" custom-select form-control form-control-sm" style="width: 150px;" id="inlineFormCustomSelect">
+                                                    <option selected="">Show All</option>
+                                                    <option value="1">Terkini</option>                                                    
+                                                    <option value="2">Draf</option>
+                                                    <option value="2">Draf Lengkap</option>
+                                                    <option value="3">Draf Tidak Lengkap</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                	
+
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                
+  
+                <div class="row">
+                    <div class="col-12">
+
+
+                        <div class="card" style="border-radius: 10px;">
+                            <div class="card-body">                             
+                                 <div class="row">
+                                    <div class="col-sm-8 col-10">
+                                    <h3> SIJIL PERAKUAN BOMBA </h3>
+                                    </div>
+                                    <div class="col-sm-4 col-2 text-right">
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#help-desk">
+                                        <i class="ti-headphone-alt"></i> </button>                                        
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item"  data-toggle="modal" data-target="#perlu-tindakan-login"> <i class="ti-pencil-alt"></i> Mohon</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Hapus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <div class="row">                               
+                                    <div class="col-lg-8">
+
+                                          <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                                <p class="card-subtitle m-b-0">Jabatan Bomba dan Penyelamat Malaysia</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                                <p class="card-subtitle m-b-0">BLESS1.0</p>
+                                            </div>
+                                        </div> 
+                                         
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;"> Nama</h3>
+                                        <p class="card-subtitle m-b-0"> MAGNA CITY DEVELOPMENT SDN. BHD.</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                                <p class="card-subtitle m-b-0">Kuala Lumpur</p>
+                                            </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">  
+                                            <div class="row">  
+                                                <div class="col-lg-6">                                                                     
+                                            <h3 style="font-size: 12px; font-weight: 600;">Jenis Permohonan</h3>
+                                            <p class="card-subtitle m-b-0">Pindaan</p>
+                                                </div>
+                                                 <div class="col-lg-6">                                                                     
+                                            <div style="margin-left:-17px;"><h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                            <p class="card-subtitle m-b-0">DN201800423</p></div>
+                                                </div>
+                                            </div>
+                                             <h3 style="font-size: 12px; font-weight: 600;">Status</h3>
+                                           <p class="card-subtitle m-b-0"> Draf Tidak Lengkap</p>
+                                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="card" style="border-radius: 10px;">
+                            <div class="card-body">                             
+                                 <div class="row">
+                                    <div class="col-sm-8 col-10">
+                                    <h3> SIJIL PERAKUAN BOMBA </h3>
+                                    </div>
+                                    <div class="col-sm-4 col-2 text-right">
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#help-desk">
+                                        <i class="ti-headphone-alt"></i> </button>                                        
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item"  data-toggle="modal" data-target="#pilih-bisnes"> <i class="ti-pencil-alt"></i> Mohon</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Hapus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <div class="row">                               
+                                    <div class="col-lg-8">
+
+                                          <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                                <p class="card-subtitle m-b-0">Jabatan Bomba dan Penyelamat Malaysia</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                                <p class="card-subtitle m-b-0">BLESS1.0</p>
+                                            </div>
+                                        </div> 
+                                         
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;"> Nama</h3>
+                                        <p class="card-subtitle m-b-0"> MAGNA CITY DEVELOPMENT SDN. BHD.</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                                <p class="card-subtitle m-b-0">Kuala Lumpur</p>
+                                            </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">  
+                                            <div class="row">  
+                                                <div class="col-lg-6">                                                                     
+                                            <h3 style="font-size: 12px; font-weight: 600;">Jenis Permohonan</h3>
+                                            <p class="card-subtitle m-b-0">Pindaan</p>
+                                                </div>
+                                                 <div class="col-lg-6">                                                                     
+                                            <div style="margin-left:-17px;"><h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                            <p class="card-subtitle m-b-0">DN201800423</p></div>
+                                                </div>
+                                            </div>
+                                             <h3 style="font-size: 12px; font-weight: 600;">Status</h3>
+                                           <p class="card-subtitle m-b-0"> Draf Tidak Lengkap</p>
+                                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="card" style="border-radius: 10px;">
+                            <div class="card-body">                             
+                                 <div class="row">
+                                    <div class="col-sm-8 col-10">
+                                    <h3> SIJIL PERAKUAN BOMBA </h3>
+                                    </div>
+                                    <div class="col-sm-4 col-2 text-right">
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#help-desk">
+                                        <i class="ti-headphone-alt"></i> </button>                                        
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item"  data-toggle="modal" data-target="#perlu-tindakan-login"> <i class="ti-pencil-alt"></i> Mohon</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Hapus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <div class="row">                               
+                                    <div class="col-lg-8">
+
+                                          <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                                <p class="card-subtitle m-b-0">Jabatan Bomba dan Penyelamat Malaysia</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                                <p class="card-subtitle m-b-0">BLESS1.0</p>
+                                            </div>
+                                        </div> 
+                                         
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;"> Nama</h3>
+                                        <p class="card-subtitle m-b-0"> - </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                                <p class="card-subtitle m-b-0">-</p>
+                                            </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">  
+                                            <div class="row">  
+                                                <div class="col-lg-6">                                                                     
+                                            <h3 style="font-size: 12px; font-weight: 600;">Jenis Permohonan</h3>
+                                            <p class="card-subtitle m-b-0">Cetakan Semula</p>
+                                                </div>
+                                                 <div class="col-lg-6">                                                                     
+                                            <div style="margin-left:-17px;"><h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                            <p class="card-subtitle m-b-0">DN201800345</p></div>
+                                                </div>
+                                            </div>
+                                             <h3 style="font-size: 12px; font-weight: 600;">Status</h3>
+                                           <p class="card-subtitle m-b-0"> Terkini</p>
+                                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="card" style="border-radius: 10px;">
+                            <div class="card-body">                             
+                                 <div class="row">
+                                    <div class="col-sm-8 col-10">
+                                    <h3> SIJIL PERAKUAN BOMBA </h3>
+                                    </div>
+                                    <div class="col-sm-4 col-2 text-right">
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-sm btn-info btn-circle" data-toggle="modal" data-target="#help-desk">
+                                        <i class="ti-headphone-alt"></i> </button>                                        
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -2px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item"  data-toggle="modal" data-target="#perlu-tindakan-login"> <i class="ti-pencil-alt"></i> Mohon</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Hapus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <div class="row">                               
+                                    <div class="col-lg-8">
+
+                                          <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                                <p class="card-subtitle m-b-0">Jabatan Bomba dan Penyelamat Malaysia</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                                <p class="card-subtitle m-b-0">BLESS1.0</p>
+                                            </div>
+                                        </div> 
+                                         
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <h3 style="font-size: 12px; font-weight: 600;"> Nama</h3>
+                                        <p class="card-subtitle m-b-0"> MAGNA CITY DEVELOPMENT SDN. BHD.</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                                <p class="card-subtitle m-b-0">Kuala Lumpur</p>
+                                            </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">  
+                                            <div class="row">  
+                                                <div class="col-lg-6">                                                                     
+                                            <h3 style="font-size: 12px; font-weight: 600;">Jenis Permohonan</h3>
+                                            <p class="card-subtitle m-b-0">Pindaan</p>
+                                                </div>
+                                                 <div class="col-lg-6">                                                                     
+                                            <div style="margin-left:-17px;"><h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                            <p class="card-subtitle m-b-0">DN201800423</p></div>
+                                                </div>
+                                            </div>
+                                             <h3 style="font-size: 12px; font-weight: 600;">Status</h3>
+                                           <p class="card-subtitle m-b-0"> Terkini</p>
+                                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                <!-- modal pengesahan-->
+                <div class="modal fade bs-example-modal-lg" id="perlu-tindakan-login" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-login">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="align-self-center"><i class="ti-alert btn btn-warning btn-circle btn-m"></i> Attention!</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p style="font-size: 12px;"><i class="ti-lock"></i> First time login to BLESS1.0 system! Password verification required</p>
+                                    <form>                                        
+                                        <div class="form-group">
+                                           <input type="password" class="form-control-sm" id="exampleInputPassword1" placeholder="Password" style="font-size: 11px;">
+                                        </div>
+                                        
+        
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal" onclick="actionTindakan()">Hantar</button>
+                                <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                 <!-- modal permohonan baru-->
+                <div class="modal fade bs-example-modal-lg" id="perlu-tindakan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Permohonan Baru</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://training.bless.gov.my/bless/action/online/jbpmBombaNew?licenseSeq=652156&licenseId=JBPM0002" style="height:400px;width:100%"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Hantar</button>
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+                   <!-- modal pilih bisnes-->
+                <div class="modal fade bs-example-modal-lg" id="pilih-bisnes" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Pilih Bisnes</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive" style="font-size: 12px;">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Nama Bisnes</th>
+                                                <th>Jenis Bisnes</th>
+                                                <th>No Pendaftaran</th>
+                                                <th>Cawangan</th>
+                                                <th>Tindakan </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Magna City Development Sdn. Bhd.</td>
+                                                <td>Syarikat</td>
+                                                <td>456897-K</td>
+                                                <td>Kuala Lumpur</td>
+                                                <td><button type="button" class="btn btn-sm btn-circle btn-block btn-outline-info" onclick="actionPilihBisnes()"><i class="ti-check"></i> </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Federal Agricultural Marketing Authority</td>
+                                                <td>Agensi Kerajaan</td>
+                                                <td>-</td>
+                                                <td>Selangor</td>
+                                                <td><button type="button" class="btn btn-sm btn-circle btn-block btn-outline-info" onclick="actionPilihBisnes()"><i class="ti-check"></i> </button></td>
+                                            </tr>
+                                             <tr>
+                                                <td>Mohd Izzat Bin Mukhlas</td>
+                                                <td>Individu</td>
+                                                <td>780826026677</td>
+                                                <td>-</td>
+                                                <td><button type="button" class="btn btn-sm btn-circle btn-block btn-outline-info" onclick="actionPilihBisnes()"><i class="ti-check"></i> </button></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                               
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+                
+
+                
+
+
+         	
+
+
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Copyright Reserved by Government of Malaysia
+
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+        <style>
+           .modal-login {
+    max-width: 400px;
+    margin: 1.75rem auto;
+    overflow-y: auto;
+}
+
+            </style>
+    <script type="text/javascript">
+        function actionTindakan() {
+            $('#perlu-tindakan-login').modal('hide');
+            $('#perlu-tindakan').modal('show');
+        }
+
+        function actionPilihBisnes() {
+            $('#pilih-bisnes').modal('hide');
+            $('#perlu-tindakan').modal('show');
+        }
+    </script>
+</body>
+
+</html>

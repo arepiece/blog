@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+        <title>License Search Result</title>
+        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- chartist CSS -->
+        <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+        <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+        <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/Chart.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Footable CSS -->
+        <link href="../assets/plugins/footable/css/footable.core.css" rel="stylesheet">
+        <!-- You can change the theme colors from here -->
+        <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body class="fix-header card-no-border logo-center">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div class="preloader">
+            <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pagesclass="card".scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+            <!-- ============================================================== -->
+            <!-- Topbar header - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <header class="topbar">
+                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-header">
+                    </div>
+                    <a class="navbar-brand" href="index.html">
+
+                        <!-- ============================================================== -->
+                        <div class="navbar-collapse">
+                            <!-- ============================================================== -->
+                            <!-- toggle and nav items -->
+                            <!-- ============================================================== -->
+                            <ul class="navbar-nav mr-auto mt-md-0">
+                                <!-- This is  -->
+                                <li class="nav-item"> <a href="javascript:void(0)" class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" ><i class="mdi mdi-menu"></i></a> </li>
+                            </ul>
+
+                            <ul class="navbar-nav my-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a href="http://malaysiabizuiux.gates.edu.my/en" class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark">
+                                        <i class="ti-power-off"></i> Logout                                
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+            </header>
+            <!-- ============================================================== -->
+            <!-- End Topbar header -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <aside class="left-sidebar">
+                <div class="scroll-sidebar">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="../assets/images/logo-mbiz.png" style=" padding:10px; width:250px;" alt="homepage">
+                        </div>
+                        <div class="col-lg-8 m-t-20">
+                            <!-- Sidebar navigation-->
+                            <nav class="sidebar-nav" style="float: right;">
+                                <ul id="sidebarnav">
+                                    <li class="nav-small-cap">PERSONAL</li>
+                                    <li>
+                                        <a class="has-arrow" href="/">
+                                            <i class="ti-home"></i>
+                                            <span class="hide-menu">Home </span></a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow active" href="/pendaftaran" aria-expanded="false"><i class="ti-settings"></i><span class="hide-menu">Services </span></a>
+                                        <ul aria-expanded="false" class="collapse">
+                                            <li><a href="/pendaftaran">Business Registeration</a></li>
+                                            <li><a href="/pelesenan">Business Licensing</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="/media">
+                                            <i class="ti-gallery"></i>
+                                            <span class="hide-menu">Media </span></a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow"href="/faq">
+                                            <i class="ti-comments"></i>
+                                            <span class="hide-menu">FAQ </span></a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="https://malaysiabiz.gov.my/selidik/index.php">
+                                            <i class="far fa-thumbs-up"></i>
+                                            <span class="hide-menu">Feedback </span></a>
+                                    </li>
+                                    <li>
+                                        <a class="has-arrow" href="https://mybiz.gov:8443/demo-gosg/index.html">
+                                            <i class="ti-user"></i>
+                                            <span class="hide-menu">Register </span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+            </aside>
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+            <div class="page-wrapper">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid" style="padding: 0 50px;">
+
+                    <!-- ============================================================== -->
+                    <!-- Start Page Content -->
+                    <!-- ============================================================== -->
+
+                    <!-- Floating button -->
+                    <a href="#" title="Dismissible popover" style="position: fixed; z-index: 9999; right: 0;" 
+                       >
+                        <button type="button" class="btn waves-effect waves-light btn-md-6  btn-primary" style="position: fixed; z-index: 9999; right: 0;" data-toggle="modal" onclick="openMySelection()">MySelection (<span id="countMySelection"></span>) </button> 
+                    </a>
+                    <div class="row page-titles">
+                        <div class="col-lg-12">
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card" style="border-radius: 10px;">
+
+								
+                                <div class="box bg-light-info m-t-10 m-r-20 m-l-15 text-center" > <div class="round align-self-center round-success"><i class="ti-light-bulb"></i></div> Attention!<br> Based on the information  <div class="round align-self-center round-success"><i class="ti-info"></i></div> , you have to choose required business registration based on your services field requirement.
+                                    
+                                </div>
+								
+
+
+
+                                <div class="row" >
+                                    <div class="card-body" style="padding-bottom:0;padding-left: 2rem;padding-top: 2; ">
+                                        <h3 class="m-b-0 m-t-0" style="font-size: 20px;" "line-height: 10px;" "padding-bottom: 10px;">Your search input is:</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="card-body" style="padding-bottom:0; padding-top:0; border-bottom: 1px solid rgba(120, 130, 140, 0.13);">
+
+                                            <h3 style="font-size: 12px; font-weight: 600;">Address</h3>
+                                            <p class="card-subtitle m-b-0">Batu Pahat/Batu Pahat, Johor</p>
+
+                                            <h3 style="font-size: 12px; font-weight: 600;">Activity</h3>
+                                            <p class="card-subtitle m-b-0">
+                                                Wholesale of liquefied petroleum gas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="card-body" style="padding-bottom:1;padding-left: 2rem;padding-top: 0;">
+                                        <h3 class=" m-b-0 m-t-0" style="font-size: 20px;" "line-height: 10px;">Search Result :</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Perlesenan Persekutuan -->
+                                    <div class="col-lg-6 col-md-10">
+                                        <div class="card m-l-15 m-r-5 " style="border-radius: 10px;">
+                                            <div class="card-body bg-info" style="border-radius: 10px 10px 0px 0px; padding-bottom:0">
+                                                <h3 class="text-white card-title">List of Federal Licensing</h3>
+                                                <!-- <h6 class="card-subtitle text-white m-b-0 op-5">Hasil carian</h6> --> </div>
+                                           
+
+										   <div class="card-body">
+										   
+										   
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<input type="hidden" id="licenseId_0" >
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b" id="LesenName1">Permission of Petroleum Development Act 1974 (PDA Commercial)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right">
+													<button type="button" class="btn btn-info btn-xs waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Mana-mana individu, perniagaan, syarikat agensi swasta, agensi kerajaan dan lain-lain yang ingin menjalankan ...</h6>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">1. Menjalankan perkhidmatan bunkering melibatkan kebenaran di bawah Akta Kemajuan Petroleum1974 (PDA 2) ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency1">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0;">
+													<p class="text-right">
+                                                     <button id="Btn1" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('1')">
+                                                     <span id="textBtn1" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn1" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-sm" onclick="deleteThis('1')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;">Pendaftaran Francais Bagi Francaisor Tempatan dan Francais Induk (Seksyen 6)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen" ><i class="ti-info" id="LesenName2"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Syarikat-syarikat yang menjalankan perniagaan francais ...</h6>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Perniagaan francais di Malaysia dikawal di bawah Akta Francais 1998. Akta ini terpakai bagi penjualan apa-apa francais ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+                                                    <p class="text-right"> <a href="https://www.kpdnkk.gov.my/kpdnkk/diesel-bersubsidi-skid-tank/" target="_blank"> <button type="button" class="btn btn-info btn-sm"><i class="fa fa-link"></i> Link to Agency</button></a></p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;">Lesen Borong Barang Kawalan Berjadual (CSA)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen" ><i class="ti-info" id="LesenName2"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - ROB/ROC/Koperasi</h6>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Lesen Untuk Aktiviti Borong Bagi Barang-Barang Berjadual sepertimana yang tertakluk di bawah Peraturan-Peraturan ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+													</div>
+													<div style="padding-top: 1rem;background: #F5F5F5;border-bottom: 1px solid rgba(120, 130, 140, 0.13);text-align justify;">
+													<div class="col-md-12 align-self-center">
+													<h5>Over the counter</h5>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color: #757575">Kementerian Perdagangan Dalam Negeri dan Hal Ehwal Pengguna Wilayah Persekutuan Putrajaya<br>No. 13, Persiaran Perdana,<br> Presint 2,<br> 62623 Putrajaya,<br> Wilayah Persekutuan Putrajaya.
+													</h6>
+													</div>
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;" id="LesenName2">Kebenaran Menjalankan Aktiviti Di Bawah Akta Kemajuan Petroleum 1974 (PDA) Dan Akta Kawalan Bekalan 1961 (CSA)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" ></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Perniagaan, Syarikat, Perkongsian Liabiliti Terhad & Badan-badan Profesional</h6>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Kebenaran PDA bagi menjual runcit bahan petroleum melibatkan kebenaran mengusahakan Stesen Minyak/Skid Tank ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency2">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+													<p class="text-right">
+                                                     <button id="Btn2" type="button" class="btn btn-action btn-info btn-sm " onclick="addMySelection('2')">
+                                                     <span id="textBtn2" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn2" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('2')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;">Pendaftaran Francais Bagi Francaisor Asing (Seksyen 54)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen" ><i class="ti-info" id="LesenName2"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Perniagaan, Syarikat, Perkongsian Liabiliti Terhad & Badan-badan Profesional</h6>
+													</div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Pendaftaran Perniagaan Francais bagi Pemberi Francais Asing/Francaisor Asing di bawah Seksyen 54 Akta Francais ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5 text-right">
+													<p class="text-right"> <a href="https://www.kpdnkk.gov.my/kpdnkk/wp-content/uploads/2017/04/Borang-KSD-1-Pengangkutan-Darat-15082014.pdf" target="_blank" download> <button type="button" class="btn btn-info btn-sm"><i class="fa fa-download"></i> Download Form</button></a></p>
+													
+													</div>
+													
+													
+											</div>
+											
+											
+											
+                                                <div class="message-box contact-box">
+                                                   
+                                                    <div class="message-widget contact-widget">
+												
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Perlesenan Persekutuan -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card m-r-20 m-l-5" style="border-radius: 10px;">
+                                            <div class="card-body bg-info" style="border-radius: 10px 10px 0px 0px; padding-bottom:0">
+                                                <h3 class="text-white card-title">List of State Licensing</h3>
+                                                </div>
+                                            <div class="card-body">
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b" id="LesenName3">Permission of Petroleum Development Act 1974 (PDA Commercial)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" id="LesenName1"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Mana-mana individu, perniagaan, syarikat agensi swasta, agensi kerajaan dan lain-lain yang ingin menjalankan ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency3">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left:0">
+													<p class="text-right">
+                                                     <button id="Btn3" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('3')">
+                                                     <span id="textBtn3" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn3" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('3')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;" id="LesenName4">Pendaftaran Francais Bagi Francaisor Tempatan dan Francais Induk (Seksyen 6)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" id="LesenName1"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Syarikat-syarikat yang menjalankan perniagaan francais ...</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency4">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+													<p class="text-right">
+                                                     <button id="Btn4" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('4')">
+                                                     <span id="textBtn4" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn4" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('4')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;" id="LesenName5">Lesen Borong Barang Kawalan Berjadual (CSA)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" id="LesenName1"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - ROB/ROC/Koperasi</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency5">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+													<p class="text-right">
+                                                     <button id="Btn5" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('5')">
+                                                     <span id="textBtn5" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn5" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('5')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;" id="LesenName6">Kebenaran Menjalankan Aktiviti Di Bawah Akta Kemajuan Petroleum 1974 (PDA) Dan Akta Kawalan Bekalan 1961 (CSA)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" ></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Perniagaan, Syarikat, Perkongsian Liabiliti Terhad & Badan-badan Profesional</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency6">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5 text-right">
+													<p class="text-right">
+                                                     <button id="Btn6" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('6')">
+                                                     <span id="textBtn6" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn6" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('6')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+											
+											<div class="row" style="border-bottom: 1px solid rgba(120, 130, 140, 0.13); text-align justify;">
+													<div class="col-md-9 col-9 align-self-center">
+													<h5 class="title" style="b;padding-top: 2rem;" id="LesenName7">Pendaftaran Francais Bagi Francaisor Asing (Seksyen 54)</h5>
+													</div>
+													<div class="col-md-3 col-3 text-right" style="padding-top: 2rem;">
+													<button type="button" class="btn btn-info waves-effect-light btn-circle btn-info btn-sm" data-toggle="modal" data-target="#info-lesen"><i class="ti-info" id="LesenName1"></i></button> </div>
+													<div class="col-md-12 align-self-center">
+													<h6 style="color:#757575">Wajib - Perniagaan, Syarikat, Perkongsian Liabiliti Terhad & Badan-badan Profesional</h6>
+													</div>
+													<div class="col-md-7 col-7 align-self-center">
+													<h6 ><a href="https://www.kpdnkk.gov.my/kpdnkk/" class="link" style="color:#1e88e5" id="Agency7">Kementerian Perdagangan Dalam Negeri Koperasi dan Kepenggunaan</a></h6>
+													</div>
+													<div class="col-md-5 col-5" style="padding-left: 0">
+													<p class="text-right">
+                                                     <button id="Btn7" type="button" class="btn btn-action btn-info btn-sm" onclick="addMySelection('7')">
+                                                     <span id="textBtn7" ><i class="fa fa-plus"></i> Add to MySelection
+                                                      </span></button>
+                                                      <button id="removeBtn7" type="button" style="display:none; color: #FAFAFA; background-color: #616161;" class="btn btn-action btn-outline-secondary btn-sm" onclick="deleteThis('7')">
+                                                      <span id="textBtn1" ><i class="fa fa-minus"></i> Remove from MySelection
+                                                      </span></button>
+                                                     </p>
+													
+													</div>
+													
+													
+											</div>
+
+                                                <div class="message-box contact-box">
+                                                    
+                                                    <div class="message-widget contact-widget">
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+						
+						<!-- modal info Lesen-->
+                        <div class="modal fade bs-example-modal-lg" id="info-lesen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;z-index: 9999;">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background:#222">
+                                        <h4 class="modal-title" id="myLargeModalLabel" style="color:#ffff"><div class="round align-self-center round-success m-r-10"><i class="ti-info"></i></div> Licensing Information</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: #ffff;opacity: 1;">×</button>
+                                    </div>
+                                    <div class="modal-body" style="padding-top: 0">
+									
+									
+                                    <div style="font-size: 12px">
+									<table class="table color-table primary-table">
+                                        
+                                        <tbody>
+                                           
+											 <tr >
+                                                <td ><b>Licensing</b></td>
+                                                
+                                                <td>Perakuan Bomba<br><br>
+                                                </td>
+												<td><div style="text-right;" class="printPage"><button type="button" class="btn btn-info btn-circle waves-effect text-right" data-dismiss="modal"><i class="ti-printer" onclick="window.print();"></i></button></div></td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Activity/Licensing Type</b></td>
+                                                
+                                                <td>Sijil Perakuan Bomba<br><br>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Purpose/Description</b></td>
+                                                
+												<td>Untuk memastikan semua pepasangan keselamatan kebakaran berada dalam keadaan baik dan boleh berfungsi dengan baik.</td>
+                                                <td><br><br>
+                                                </td>
+                                            </tr>
+											<tr >
+                                                <td ><b>Agency</b></td>
+                                                
+                                                <td>Jabatan Bomba & Penyelamat Malaysia, Kementerian Kesejahteraan Bandar, Perumahan Dan Kerajaan Tempatan<br><br>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Address</b></td>
+                                                
+                                                <td>Jabatan Bomba & Penyelamat Malaysia<br>
+												LEBUH WAWASAN, PRESINT 7,<br>
+												62250 PUTRAJAYA.<br>
+												<b>Tel :</b>0388927713<br>
+												<b>Fax :</b>0388880025<br>
+												Laman Sesawang :<br>
+												<a href="http://www.bomba.gov.my" target="_blank">http://www.bomba.gov.my</a>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Licensing Locations</b></td>
+                                                
+                                                <td>Jabatan Bomba dan Penyelamat Malaysia di peringkat Zon/Negeri<br><br>
+                                                </td>
+                                            </tr>
+											  <tr >
+                                                <td ><b>License Terms</b></td>
+                                                
+                                                <td>-<br><br>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Fees / Licensing Validity Period</b></td>
+                                                
+                                                <td>No fee<br>
+												<b>Tempoh Sah Laku :</b> Wajib diperbaharui setiap tahun<br>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Acts & Regulations
+												</b></td>
+                                                
+                                                <td>1. Undang-undang Kecil Bangunan Seragam 1984 2. Akta Perkhidmatan Bomba 1988 (Akta 341)<br><br>
+                                                </td>
+                                            </tr>
+                                            <tr >
+                                                <td ><b>Application Methods</b></td>
+                                                
+                                                <td><a target="_blank" href="https://www.bless2.gov.my/index.php/login/">https://www.bless2.gov.my/index.php/login/</a>
+                                                    <br><br>
+                                                </td>
+                                            </tr>
+											<tr >
+                                                <td ><b>Eligible Business Entities</b></td>
+                                                
+                                                <td>Semua jenis premis yang telah ditetapkan<br><br>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    
+                        <!-- ============================================================== -->
+                        <!-- End PAge Content -->
+                        <!-- ============================================================== -->
+                    </div>
+                    <div class="modal fade modal-list-myselection" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myLargeModalLabel">MySelection</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body" style="padding-top: 0">
+                                    <div class="table-responsive">
+                                        <table id="demo-foo-addrow" class="table m-t-30 table-hover contact-list">
+
+                                            <tbody>
+
+
+                                            </tbody>
+                                            
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <td >
+                                        <button type="button" class="btn btn-info waves-effect" onclick="goToNext()"> Go To MyTray</button>
+                                    </td>
+                                    <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Container fluid  -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- footer -->
+                    <!-- ============================================================== -->
+                    <footer class="footer">
+                        © 2018 Copyright Reserved by Government of Malaysia
+                    </footer>
+                    <!-- ============================================================== -->
+                    <!-- End footer -->
+                    <!-- ============================================================== -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Page wrapper  -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Wrapper -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- All Jquery -->
+            <!-- ============================================================== -->
+            <script src="../assets/plugins/jquery/jquery.min.js"></script>
+            <!-- Bootstrap tether Core JavaScript -->
+            <script src="../assets/plugins/popper/popper.min.js"></script>
+            <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <!-- slimscrollbar scrollbar JavaScript -->
+            <script src="js/jquery.slimscroll.js"></script>
+            <!--Wave Effects -->
+            <script src="js/waves.js"></script>
+            <!--Menu sidebar -->
+            <script src="js/sidebarmenu.js"></script>
+            <!--stickey kit -->
+            <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+            <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+            <!--Custom JavaScript -->
+            <script src="js/custom.min.js"></script>
+            <!-- ============================================================== -->
+            <!-- Style switcher -->
+            <!-- ============================================================== -->
+            <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+            <!-- Footable -->
+            <script src="../assets/plugins/footable/js/footable.all.min.js"></script>
+            <script src="../assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+            <!--FooTable init-->
+            <script src="js/footable-init.js"></script>
+            <!-- ============================================================== -->
+            <!-- Style switcher -->
+            <!-- ============================================================== -->
+            <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+            <script>
+
+                                            $(document).ready(function () {
+                                                $("#countMySelection").text($(".cls-row").length);
+                                                $("#countMySelection").val($(".cls-row").length);
+
+                                            });
+
+                                            function deleteThis(classTrName) {
+                                                $(".footable" + classTrName).remove();
+                                                $("#countMySelection").text($(".cls-row").length);
+                                                $("#countMySelection").val($(".cls-row").length);
+                                                if ($(".cls-row").length == 0) {
+                                                    $(".modal-list-myselection").modal('hide');
+                                                }
+                                                $("#Btn" + classTrName).show();
+                                                $("#removeBtn" + classTrName).hide();
+                                            }
+
+                                            function addMySelection(rowCnt) {
+                                                if ($("#textBtn" + rowCnt).hasClass('fa fa-minus')) {
+                                                    deleteThis(rowCnt);
+                                                    return;
+                                                }
+
+                                                var myModal = $("#targetModal" + rowCnt).val();
+
+                                                var app = "<tr class='footable" + rowCnt + " cls-row' style='height: 40px;'>";
+                                                app += "<td> <p style=' color:#455a64;height: 5px'>" + $("#LesenName" + rowCnt).text() + "</p> <br>";
+                                                app += "<p class='card-subtitle m-b-0' style='color:#1e88e5; font-size: 12px; font-weight: 100'> " + $("#Agency" + rowCnt).text() + "</p></td><td>";
+                                                app += "<button type='button' class='btn btn-sm btn-icon btn-pure btn-outline' data-toggle='tooltip' data-original-title='Delete' onclick='deleteThis(" + rowCnt + ")'><i class='ti-close' aria-hidden='true'></i></button></td></tr>";
+                                                $("#demo-foo-addrow").append(app);
+                                                $("#countMySelection").text($(".cls-row").length);
+                                                $("#countMySelection").val($(".cls-row").length);
+
+                                                $("#Btn" + rowCnt).hide();
+                                                $("#removeBtn" + rowCnt).show();
+                                            }
+
+                                            function openMySelection() {
+                                                if ($(".cls-row").length == 0) {
+                                                    return;
+                                                } else {
+                                                    $(".modal-list-myselection").modal('show');
+                                                }
+                                            }
+
+                                            function goToNext() {
+                                                location.href = '/Malaysiabiz2019/horizontal/MyTray.php?agency_name=0';
+                                            }
+            </script>
+    </body>
+
+</html>

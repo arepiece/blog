@@ -1,0 +1,19 @@
+[
+    {
+        "group_code": "G-A",
+        "division_code":"D-A",
+        "section_code":"S-A",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "active":"true"
+    },
+
+    {
+        "group_code": "G-B",
+        "division_code":"D-B",
+        "section_code":"S-B",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "active":"true"
+    }
+]

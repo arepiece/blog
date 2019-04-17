@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>BLESS 2.0 [bless2_training]</title>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/static/images/jata_2_0.png">
+        <link rel="icon" type="image/x-icon" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/static/images/jata_2_0.png">    
+
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/sidebar-nav.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/animate.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/elite.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/blue.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="./BLESS 2.0 [bless2_training]_files/jquery.toast.css">
+        
+        <style>
+            iframe {
+                min-height: 550px;
+                width: 100%;
+                margin: 0px;
+                padding-bottom: 10px;
+            }
+            
+            .navbar-header {
+                width: auto;
+            }
+            
+            .container-fluid {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+            
+            .badge-notify{
+                background:red;
+                position:relative;
+                top: -10px;
+                left: 0px;
+             }
+             .popover-content {
+                 padding: 0px !important;
+             }
+             .popover-footer {
+                margin: 0;
+                padding: 8px 14px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                background-color: #F7F7F7;
+                border-bottom: 1px solid #EBEBEB;
+                border-radius: 5px 5px 0 0;
+              }
+              .popover {
+                margin-right: 50px;
+              }
+            
+            body {
+                height: 100%;
+                overflow: hidden;
+            }
+
+        </style>
+        
+    </head>
+
+    <body class="fix-header fix-sidebar">
+        
+        <div class="preloader" style="display: none;">
+            <div class="cssload-speeding-wheel"></div>
+        </div>
+        
+        <div id="wrapper">
+            <!-- mobile -->
+            <nav class="navbar navbar-default navbar-static-top m-b-0 hidden-lg">
+                <div style="height: 50px;background-color: #03a9f3;"> 
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav navbar-left pull-left">
+                            <li><a class="hidden-sm hidden-md hidden-lg" style="height:50px;border:none; padding-left:10px; padding-top: 0px; padding-bottom: 0px;" href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i style="color:white;" class="fa fa-bars fa-2x"></i></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right pull-right in">
+                            <li><a id="btnLogout" style="cursor:pointer; display: block;" onclick="logoutAll(); return false;" title="Logout" class="active"><i class="fa fa-power-off fa-lg" style="color:white"></i> <span class="hidden-xs" style="color: white;">Logout</span></a> </li>
+                        </ul>
+                        </div>
+                </div>
+            </nav>
+            <!-- desktop -->
+            <nav class="navbar navbar-default navbar-static-top m-b-0 hidden-xs">
+                <div style="height: 50px;background-color: #03a9f3;"> 
+                    <div class="container-fluid">
+                        <div class="navbar-header" style="margin-left: -15px;margin-top: 0px; background-color: #fff;">
+                            <a href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/">
+                                <img width="220px" src="./BLESS 2.0 [bless2_training]_files/bless-logo.png">
+                            </a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                          <li class="active">
+                              <a href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" onclick="return false;" style="background-color: transparent">
+                              <span style="color: white;">MRS TAN SIOK CHING (510911015458)</span>
+                              </a>
+                           </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right pull-right in">
+                            <li>
+                                <a href="javascript:void(0)" id="popoverNofikasi" data-original-title="" title=""><span class="fa fa-bell" style="color:white;"></span> <span style="color:white">Notification</span><span class="badge badge-notify" id="countNofikasi"></span></a>
+                            </li>
+                            <li>
+                                <a id="btn" style="cursor:pointer; display: block;" onclick="loadFrame(); return false;" title="Manual" class="active"><i class="fa fa-book" style="color:white"></i> <span class="hidden-xs" style="color: white;">Manual</span></a>
+                                <!--<a id="btn" class="fa fa-book" style="color:white;"> <span style="color:white" onclick="loadFrame(); return false;" th:text="#{general.manual.button}">Manual</span></a>-->
+                            </li>
+                            <li>
+                              <a id="btnLogout" style="cursor:pointer; display: block;" onclick="logoutAll(); return false;" title="Logout" class="active"><i class="fa fa-power-off fa-lg" style="color:white"></i> <span class="hidden-xs" style="color: white;">Logout</span></a> 
+                            </li>
+                        </ul>
+                      </div>
+                </div>                
+            </nav>
+            <!--
+            <nav class="navbar navbar-default navbar-static-top m-b-0">
+                <div style="height: 50px;" class="navbar-header"> 
+                    <a class="navbar-toggle hidden-sm hidden-md hidden-lg" style="height:50px;" href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i style="color:white;" class="fa fa-bars fa-2x"></i>
+                    </a>
+                    <div style="background-color: white;" class="top-left-part">
+                        <a class="logo" href="">
+                            <b class='hidden-xs'>
+                                <img th:src="@{/static/images/bless-logo.png}" width="220px" />
+                            </b>
+                        </a>
+                    </div>
+                    <ul style="margin-top: 8px; padding-left: 25px;" class="nav navbar-left navbar-top-links">
+                        <li style="padding-top: 10px;" class="hidden-xs">
+                            <span style="color: white;" th:text="${refTitle} + ' ' + ${userProfile.userName} + ' (' + ${userProfile.userId} + ')'"></span>
+                        </li>
+                    </ul>
+                    <ul style="margin-top: 8px; padding-right: 25px;display: block;width: 200px;" class="nav navbar-right pull-right">
+                        <li style="width: 60px;display: block;">
+                            <a style="cursor:pointer; "><i  class="fa fa-bell fa-lg" style="color:white"></i></a>
+                        </li>
+                        <li style="width: 60px;display: block;">                            
+                            <a id="btnLogout" style="cursor:pointer; display: block;" th:title="#{general.logout}" onclick="logoutAll(); return false;"><i  class="fa fa-power-off fa-lg" style="color:white"></i> <span class="hidden-xs" style="color: white;" th:text="#{general.logout}"></span></a> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            -->
+            
+            <div style="padding-top: 67px;" class="navbar-default sidebar" role="navigation">
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div style="padding-bottom: 50px; overflow: hidden; width: auto; height: 100%;" class="sidebar-nav navbar-collapse slimscrollsidebar"><ul class="nav" id="side-menu"><li id="li0403"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Home" onclick="openUrlPath(this);return false;" code="0403" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/dashboard"><i class="icon-home"></i> <span>Home</span></a></li><li id="li0405" class="active"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" class="waves-effect" code="0405"> <i class="icon-folder-alt"></i> <span class="hide-menu">My License<span class="fa arrow"></span></span></a><ul class="nav nav-second-level collapse in" aria-expanded="true" style=""><li id="li040501"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Active License(s)" onclick="openUrlPath(this);return false;" code="040501" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/licenseSelection/myLicense"><span>Active License(s)</span></a></li><li id="li040502"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="My Tray" onclick="openUrlPath(this);return false;" code="040502" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/licLicenseRequest"><span>My Tray</span></a></li></ul></li><li id="li0404"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" class="waves-effect" code="0404"> <i class="icon-user"></i> <span class="hide-menu">User Profile<span class="fa arrow"></span></span></a><ul class="nav nav-second-level collapse"><li id="li040401"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Individual" onclick="openUrlPath(this);return false;" code="040401" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/usrUserProfile/edit"><span>Individual</span></a></li><li id="li040402"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Organisation" onclick="openUrlPath(this);return false;" code="040402" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/orgOrganisation"><span>Organisation</span></a></li><li id="li040403"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Consultant" onclick="openUrlPath(this);return false;" code="040403" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/orgOrganisationConsultant"><span>Consultant</span></a></li><li id="li040404"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Change Password" onclick="openUrlPath(this);return false;" code="040404" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/changePassword"><span>Change Password</span></a></li></ul></li><li id="li0408"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" class="waves-effect" code="0408"> <i class="icon-control-play"></i> <span class="hide-menu">My Task (Applicant)<span class="fa arrow"></span></span></a><ul class="nav nav-second-level collapse"><li id="li040802"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="My Task" onclick="openUrlPath(this);return false;" code="040802" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/taskApplicant"><span>My Task</span></a></li><li id="li040801"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Track &amp; Monitoring" onclick="openUrlPath(this);return false;" code="040801" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/trackAndMonitoring/trackAndMonitoringApplicant"><span>Track &amp; Monitoring</span></a></li></ul></li><li id="li0415"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" class="waves-effect" code="0415"> <i class="icon-bubbles"></i> <span class="hide-menu">Query &amp; Feedback<span class="fa arrow"></span></span></a><ul class="nav nav-second-level collapse"><li id="li041547"><a style="padding-right: 21px;" href="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private#" title="Personal Message" onclick="openUrlPath(this);return false;" code="041547" urlpath="http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/privateMessage"><span>Personal Message</span></a></li></ul></li></ul></div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 549px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </div>
+            
+            <div style="background-color: white; min-height: 505px;" id="page-wrapper">
+                <div class="container-fluid">
+                    <iframe src="./BLESS 2.0 [bless2_training]_files/myLicense.html" onload="" id="myframe" frameborder="0" scrolling="auto" style="height: 558px;"></iframe>
+                </div>
+            </div>
+            
+            <script src="./BLESS 2.0 [bless2_training]_files/jquery-2.1.1.min.js.download"></script>
+            <script src="./BLESS 2.0 [bless2_training]_files/bootstrap.min.js.download"></script>
+            <script src="./BLESS 2.0 [bless2_training]_files/sidebar-nav.min.js.download"></script>
+            <script src="./BLESS 2.0 [bless2_training]_files/jquery.slimscroll.js.download"></script>
+            <script src="./BLESS 2.0 [bless2_training]_files/waves.js.download"></script>
+            <script src="./BLESS 2.0 [bless2_training]_files/custom.min.js.download"></script>
+        
+        <script>
+            /*<![CDATA[*/
+            var buttonNo = 'No';
+            var buttonYes = 'Yes';
+            var titleLogout = 'Logout';
+            
+            function openUrlPath(thiz) {
+                var urlPath = $(thiz).attr('urlPath');
+                var title = $(thiz).attr('title');
+                var code = $(thiz).attr('code'); 
+                if(urlPath === "null") {
+                    return;
+                }
+                if(urlPath) {
+                    $("#myframe").attr("src", urlPath); 
+                }
+                //check noification
+                checkNotification();
+                
+                //create menu trail
+                $.ajax({
+                   url: "createMenuTrail",
+                   method: "GET",
+                   data: "title=" + title
+                });
+                
+            }
+            
+            function profile() {
+                $("#myframe").attr("src", 'http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/scucUserConfiguration/userProfile');
+            }
+            
+            function reloadMyFrame() {
+                var urlPath = $("#myframe").attr("src");
+                $("#myframe").attr("src", urlPath);
+            }
+            
+            function logoutAll(){
+                window.location.href = 'http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/loggingOut';
+            }
+            
+            function loadFrame() {
+                $("#myframe").attr("src", 'http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/accmConfigurationManual/applicant');
+            }
+            
+            $(document).on('click', '#refreshNotification', function() {
+                $("#popoverNofikasi").popover('hide');
+                checkNotification();
+                setTimeout(function(){
+                    $("#popoverNofikasi").trigger("click");
+                },1000);
+            });
+            
+            function manualAll(){
+                window.location.href = 'http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/private/accmConfigurationManual/applicant';
+            }
+            
+            function setPopover() {
+                //default
+                var contentPath = '/BLESS2_PROD_TEST/';
+                var header = '<h3 class="popover-title" id="popoverTitle"></h3>';
+                var footer = '<div class="popover-footer" id="popoverFooter"><a href="#"><div  class="text-center"><b>See all notifications</b></div></a></div>';
+                var template = '<div class="popover"><div class="arrow"></div>'+header+'<div class="popover-content"></div>'+footer+'</div>';
+                var title = "";
+                var url = contentPath+"/private/dashboard/json/notification";
+
+                $('#popoverNofikasi').popover({
+                        placement: "bottom",
+                        container: 'body',
+                        title: "<div class='text-center'><b>"+title+"</b></div>",
+                        "html": true,
+                        "content": function(){
+                            var div_id =  "tmp-id-" + $.now();
+                            return details_in_popup(url, div_id);
+                        },
+                        "template": template,
+                });
+                function details_in_popup(link, div_id){
+                    $.post(link, function(data) {
+                        $('#'+div_id).html(data.list);
+//                        if(data.countUnread > 0) {
+//                            $("#popoverTitle").html("<center><b>Your have "+data.countUnread+" new message"+(data.countUnread>1?"s":"")+"</b></center>");
+//                            $("#popoverTitle").show();
+//                        }else {
+                            $("#popoverTitle").html("");
+                            $("#popoverTitle").hide();
+//                        }
+//                        if(data.countAll == 0) {
+//                            $("#popoverFooter").html('');
+//                            $("#popoverFooter").hide();
+//                        }else {
+                            $("#popoverFooter").html('<a><div  class="text-center"><b id="refreshNotification">Refresh</b></div></a>');
+                            $("#popoverFooter").show();
+//                        }
+                    
+                    });
+                    return '<div id="'+ div_id +'" style="padding:5px"><i class="fa fa-spinner fa-spin"></i><span style="text-transform:none"> Loading...</span></div>';
+                }
+                $('[data-toggle="popover"]').popover({
+                    container: 'body'
+                });
+                $(document).on('click', function (e) {
+                    $('[data-toggle="popover"],[data-original-title]').each(function () {
+                        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {                
+                            (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+                        }
+
+                    });
+                });
+            }
+            
+            var countUnreadNotification = 0;
+            function checkNotification() {
+                var contentPath = '/BLESS2_PROD_TEST/';
+                var tgtAjax = contentPath+"private/dashboard/json/notification/status";
+                $.post(tgtAjax, function(data) {                    
+                    var countUnread = data.total_unread;
+                    var countRead = data.total_read;
+                    var countAll = data.total_all;
+                    if(countUnreadNotification != countUnread) {
+                        if(countUnread > 0) {                        
+                            countUnreadNotification = countUnread;
+                            
+                            $("#countNofikasi")
+                                    .text(countUnread)
+                                    .removeClass()
+                                    .addClass("bounceInUp animated badge badge-notify")
+                                    .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                                            $(this)
+                                                    .removeClass()
+                                                    .addClass('badge badge-notify');
+                                        });;
+                        }else {
+                            $("#countNofikasi").text('');
+                        }
+                    }
+                });
+            }
+            
+            $(function (data) {
+                
+                setPopover();
+                checkNotification();
+                $("#myframe").height($("[role=navigation]").height());
+                
+                window.setInterval(function() {
+                    checkNotification();
+                }, 15000)
+                
+//                $(this).mousemove(function (e) {
+//                    startTimer();
+//                });
+//                
+//                $(this).keypress(function (e) {
+//                    startTimer();
+//                });
+                
+//                var os = navigator.platform.toLowerCase();
+//                
+//                if(os.indexOf("win") != -1){
+//                    $("body").css("position", "fixed");
+//                    $("body").css("height", "500px");
+//                    $("body").css("width", "100%");
+//                }
+                
+            });
+            
+            function triggerMinify() {
+                $("#btnMinifyMe").click();
+            }
+            
+            function menu() {
+                var has = $("#body").hasClass("hidden-menu");
+                if(has) {
+                    $("#body").removeClass("hidden-menu");
+                } else {
+                    $("#body").addClass("hidden-menu");
+                }
+            }
+            
+            function closeMenu(){
+                $("#body").addClass("hidden-menu");
+            }
+            
+            var ajaxBreadcrumbUrlPath = null;
+            function updateBreadcrumb() {
+                var url = $("#myframe").attr('src');
+                if(url === "private/dashboard") {
+                    $("#breadcrumb").html("<ul class=breadcrumb><li>Dashboard</li></ul>");
+                    return;
+                }
+                var menuId = $("#myframe").attr('menuId');
+                $("#breadcrumb").html('');
+                $.get(ajaxBreadcrumbUrlPath, {url:url}, function(data) {
+                    $("#breadcrumb").html(data);
+                });
+            }
+            
+            var interval;
+            function startTimerxxx(duration, display) {
+                var minutes = 30;
+                var minutesToSecond = 60 * minutes;
+                var timer = minutesToSecond, minutes, seconds;
+                
+                clearInterval(interval);
+                
+                interval = setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    $("#time").text(minutes + ":" + seconds);
+
+                    if (timer == 30) {
+                        var btnContinue = '??button.continue_en_US??';
+                        var title = '??general.timeout_en_US??';
+                        $.SmartMessageBox({
+                            title: title,
+                            buttons: '[' + btnContinue + ']'
+                        }, function (ButtonPressed) {
+                        })
+                    } else if(timer == 0){
+                        window.location.href = 'http://trainingb2.bless.gov.my/BLESS2_PROD_TEST/loggingOut';
+                    }
+                    
+                    timer--;
+                    
+                }, 1000);
+            }
+            
+        /*]]>*/
+        </script>
+        
+        </div>
+    
+
+
+</body></html>

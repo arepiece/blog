@@ -1,0 +1,174 @@
+[{
+        "key": 1,
+        "name": "Batu Pahat",
+        "code": 101,
+        "state": "01",
+        "active": "true"
+    },
+    {
+        "key": 2,
+        "name": "Johor Bahru",
+        "code": 201,
+        "state": "01",
+        "active": "true"
+    },
+    {
+        "key": 3,
+        "name": "Kluang",
+        "code": 301,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 4,
+        "name": "Kota Tinggi",
+        "code": 401,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 5,
+        "name": "Kulai",
+        "code": 501,
+        "state": "01",
+        "active": "true"
+    },
+    {
+        "key": 6,
+        "name": "Mersing",
+        "code": 601,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 7,
+        "name": "Muar",
+        "code": 701,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 8,
+        "name": "Pontian",
+        "code": 801,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 9,
+        "name": "Segamat",
+        "code": 901,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 10,
+        "name": "Tangkak",
+        "code": 1001,
+        "state": "01",
+        "active": "true"
+
+    },
+    {
+        "key": 11,
+        "name": "Alor Setar",
+        "code": 102,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 12,
+        "name": "Baling",
+        "code": 202,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 13,
+        "name": "Bandar Baharu",
+        "code": 302,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 14,
+        "name": "Kuala Muda",
+        "code": 402,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 15,
+        "name": "Kubang Pasu",
+        "code": 502,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 16,
+        "name": "Kulim",
+        "code": 602,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 17,
+        "name": "Langkawi",
+        "code": 702,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 18,
+        "name": "Padang Terap",
+        "code": 802,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 19,
+        "name": "Pendang",
+        "code": 902,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 20,
+        "name": "Pokok Sena",
+        "code": 1002,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 21,
+        "name": "Sik",
+        "code": 1102,
+        "state": "02",
+        "active": "true"
+
+    },
+    {
+        "key": 22,
+        "name": "Yan",
+        "code": 1202,
+        "state": "02",
+        "active": "true"
+
+    }
+]

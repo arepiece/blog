@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>MyLicense</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border logo-center">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="http://malaysiabizuiux.gates.edu.my/en" class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark">
+                            	<i class="ti-power-off"></i> Logout                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+                        <div class="scroll-sidebar">
+                <div class="row">
+                    <div class="col-lg-4">
+                       <img src="../assets/images/logo-mbiz.png" style=" padding:10px; width:250px;" alt="homepage">
+                    </div>
+                    <div class="col-lg-8 m-t-20">
+                        <!-- Sidebar navigation-->
+                        <nav class="sidebar-nav" style="float: right;">
+                            <ul id="sidebarnav">
+                                <li class="nav-small-cap">PERSONAL</li>
+                                <li>
+                                    <a class="has-arrow" href="mydashboard.php">
+                                        <i class="ti-pie-chart"></i>
+                                        <span class="hide-menu">MyDashboard </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="mybisnes.php">
+                                        <i class="ti-briefcase"></i>
+                                        <span class="hide-menu">MyBusiness </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="MyTray.php">
+                                        <i class="ti-clipboard"></i>
+                                        <span class="hide-menu">MyTray </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow"href="mytracker.php
+">
+                                        <i class="ti-loop"></i>
+                                        <span class="hide-menu">MyTracker </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="MyLicense.php">
+                                        <i class="ti-files"></i>
+                                        <span class="hide-menu">My License </span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid" style="padding: 0 50px;">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <!-- <div class="col-md-6 col-6 align-self-center">
+                     
+                    </div>
+                    <div class="col-md-6 col-6  text-right">                            
+                        <button type="button" class="btn waves-effect waves-light btn-rounded btn-xs btn-info">
+                            <i class="ti-help"></i> Bantuan </button>                                   
+                    </div>
+
+                    <div class="col-lg-12" >
+                        <div style="border-top: 1px solid #009efb; ">
+                        </div>
+                    </div> -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;"> KR06789</span></button>
+											<h2 <span>MAGNA CITY DEVELOPMENT SDN. BHD.</span></h2>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Nama Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Sijil Perakuan Bomba </p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                        <p class="card-subtitle m-b-0">Johor Bahru</p>
+                                    </div>
+                                </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>                                                                              
+                                        <p class="card-subtitle m-b-0">Jabatan Bomba Dan Penyelamat Malaysia</p>
+										</div>
+                                        <div class="col-lg-4">
+										<h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+										<p class="card-subtitle m-b-0">
+                                        BLESS1.0</p>
+                                        </div>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#help-desk"><i class="ti-headphone-alt"></i> </button>
+										
+										
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                        <p class="card-subtitle m-b-0">BL22018392</p>
+                                   
+                                            </div>
+                                        </div>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">30/09/2018 <br><span class="text-danger font-bold"> Telah Tamat Tempoh</span></p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" id="jenisTindakan" name="jenisTindakan">
+                                              <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan" data-whatever="@getbootstrap">Pembaharuan</a>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                            <i class="ti-ticket"></i> <span style="letter-spacing: 2px;"> KR009534</span></button>
+                                            <h2 <span>MAGNA CITY DEVELOPMENT SDN. BHD.</span></h2>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Nama Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Sijil Perakuan Bomba </p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                        <p class="card-subtitle m-b-0">Kuala Lumpur</p>
+                                    </div>
+                                </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>                                                                              
+                                        <p class="card-subtitle m-b-0">Jabatan Bomba Dan Penyelamat Malaysia</p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        BLESS1.0</p>
+                                        </div>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#help-desk"><i class="ti-headphone-alt"></i> </button>
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                        <p class="card-subtitle m-b-0">BL22011192</p>
+                                   
+                                            </div>
+                                        </div>
+                                        
+                                        <h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">04/08/2018 <br><span class="text-danger font-bold"> Telah Tamat Tempoh</span></p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" id="jenisTindakan" name="jenisTindakan">
+                                              <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pembaharuan</a>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                            <i class="ti-ticket"></i> <span style="letter-spacing: 2px;"> BJ00123</span></button>
+                                            <h2 <span>MAGNA CITY DEVELOPMENT SDN. BHD.</span></h2>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Nama Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Sijil Perakuan Bomba </p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                        <p class="card-subtitle m-b-0">Melaka</p>
+                                    </div>
+                                </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>                                                                              
+                                        <p class="card-subtitle m-b-0">Jabatan Bomba Dan Penyelamat Malaysia</p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        BLESS1.0</p>
+                                        </div>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#help-desk"><i class="ti-headphone-alt"></i> </button>
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                        <p class="card-subtitle m-b-0">BL220180097</p>
+                                   
+                                            </div>
+                                        </div>
+                                        
+                                        <h3 style="font-size: 12px; font-weight: 600;"> Akan Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">17/10/2018 <br><span class="text-warning font-bold"> 7 Hari Akan Tamat Tempoh</span></p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" id="jenisTindakan" name="jenisTindakan">
+                                              <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pembaharuan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pindaan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pembatalan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Cetakan Semula</a>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                            <i class="ti-ticket"></i> <span style="letter-spacing: 2px;"> MK00291008</span></button>
+                                            <h2 <span>Federal Agricultural Marketing Authority</span></h2>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Nama Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Sijil Perakuan Bomba </p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Cawangan</h3>
+                                        <p class="card-subtitle m-b-0">Selangor</p>
+                                    </div>
+                                </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>                                                                              
+                                        <p class="card-subtitle m-b-0">Jabatan Bomba Dan Penyelamat Malaysia</p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Sistem</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        BLESS1.0</p>
+                                        </div>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#info-lesen"><i class="ti-info"></i> </button>
+                                        <button type="button" class="btn btn-info btn-circle" data-toggle="modal" data-target="#help-desk"><i class="ti-headphone-alt"></i> </button>
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                        <h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Pembaharuan</p>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Rujukan</h3>
+                                        <p class="card-subtitle m-b-0">BL2201800986</p>
+                                   
+                                            </div>
+                                        </div>
+                                        
+                                        <h3 style="font-size: 12px; font-weight: 600;"> Akan Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">20/10/2018 <br><span class="text-warning font-bold"> 10 Hari Akan Tamat Tempoh</span></p>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Tindakan
+                                            </button>
+                                            <div class="dropdown-menu" id="jenisTindakan" name="jenisTindakan">
+                                              <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pembaharuan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pindaan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Pembatalan</a>
+											  <a class="dropdown-item" data-toggle="modal" data-target="#tindakan-pembaharuan2" data-whatever="@getbootstrap">Cetakan Semula</a>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                                
+                
+
+                <!-- sample modal content -->
+                <div class="modal fade bs-example-modal-lg" id="status-permohonan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Status Permohonan</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Maklumat Pemohon</h4>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- sample modal content -->
+                <div class="modal fade bs-example-modal-lg" id="iframe-pembaharuan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-license">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Pembaharuan Lesen</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="test" src="https://training.bless.gov.my/bless/action/online/jpnLpp?licenseSeq=652240&licenseId=MHLG028"  style="overflow: scroll; width:100%; height:400px"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal" onclick="actionHantar()">Hantar</button>
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                 <!-- sample modal content -->
+                 <div class="modal fade bs-example-modal-lg" id="iframe-pembatalan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-license">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Pembatalan Lesen</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body-license">
+                                <iframe id="test" src="https://training.bless.gov.my/bless/action/online/jpnLpp?licenseSeq=652258&licenseId=MHLG041" style="overflow: scroll; width:100%; height:400px"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                  <!-- sample modal content -->
+                  <div class="modal fade bs-example-modal-lg" id="iframe-pindaan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-license">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Pindaan Lesen </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="test" src="https://training.bless.gov.my/bless/action/online/jpnLppChange?licenseSeq=652241&licenseId=MHLG029&licenseInfoMainId=326929" style="overflow: scroll; width:100%; height:400px"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                  <!-- sample modal content -->
+                  <div class="modal fade bs-example-modal-lg" id="iframe-cetakan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-license">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Cetakan Semula Lesen</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="test" src="https://training.bless.gov.my/bless/action/online/commonReqPrint?licenseSeq=652242&licenseId=MHLG030&licenseInfoMainId=326929" style="overflow: scroll; width:100%; height:400px"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- sample modal content -->
+                <div class="modal fade bs-example-modal-lg" id="perlu-tindakan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-license">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Perlu Tindakan</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="test" src="http://malaysiabizuiux.gates.edu.my/en/demo/demo-bless/Re-print BLESS 2.0.html" width="100%" style="overflow: scroll;"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->	
+                
+                <div class="modal fade bs-example-modal-lg" id="tindakan-pembaharuan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                    <p class="align-self-center"><i class="ti-alert btn btn-warning btn-circle btn-m"></i> Perhatian!</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                        <div class="modal-body">
+                          <p>Lesen anda telah tamat. Anda mahu membuat pembaharuan terhadap lesen ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-info" onClick="actionTindakanPembaharuan()">Ya</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+
+
+                  <div class="modal fade bs-example-modal-lg" id="tindakan-pembaharuan2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                    <p class="align-self-center"><i class="ti-alert btn btn-warning btn-circle btn-m"></i> Perhatian!</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                        <div class="modal-body">
+                          <p>Lesen anda telah tamat. Anda mahu membuat pembaharuan terhadap lesen ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-info" onClick="actionTindakanPembaharuan2()">Ya</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+                  <div class="modal fade bs-example-modal-lg" id="tindakan-pembatalan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                    <p class="btn btn-info btn-circle btn-m align-self-center"><i class="ti-info"></i> </p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                        <div class="modal-body">
+                          <p>Tindakan pembatalan dipilih. Anda mahu membuat pembatalan terhadap lesen ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" onClick="actionTindakanPembatalan()">Ya</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+                  <div class="modal fade bs-example-modal-lg" id="tindakan-pindaan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                    <p class="btn btn-info btn-circle btn-m align-self-center"><i class="ti-info"></i> </p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                        <div class="modal-body">
+                          <p>Tindakan pindaan dipilih. Anda mahu membuat pindaan terhadap lesen ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" onClick="actionTindakanPindaan()">Ya</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+                  <div class="modal fade bs-example-modal-lg" id="tindakan-cetakan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                            <div class="modal-header">
+                                    <p class="btn btn-info btn-circle btn-m align-self-center"><i class="ti-info"></i> </p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                        <div class="modal-body">
+                          <p>Tindakan Cetakan dipilih. Anda mahu membuat cetakan semula terhadap lesen ini?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" onClick="actionTindakanCetakan()">Ya</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+                  <div class="modal fade bs-example-modal-lg" id="tindakan-hantar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                                <div class="modal-header">
+                                        <p class="btn btn-info btn-circle btn-m align-self-center"><i class="ti-info"></i></p>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                            <div class="modal-body">
+                              <p>Selected licence(s) has been submitted.</p>
+                            </div>
+                            <div class="modal-footer">
+                                    <a href="MyTray.php"><button type="button" class="btn btn-primary">OK</button></a>
+                            </div>
+                        </form>
+                          </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                      </div>
+
+                      <div class="modal fade bs-example-modal-lg" id="tindakan-success-hantar" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                    <div class="modal-header">
+                                            <p class="btn btn-info btn-circle btn-m align-self-center"><i class="ti-info"></i> </p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                <div class="modal-body">
+                                  <p>Permohonan telah berjaya dihantar</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                                </div>
+                              </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                          </div>
+
+
+                          <!-- modal helpdesk BlESS1.0-->
+                <div class="modal fade bs-example-modal-lg" id="help-desk" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Meja Bantuan Sistem BLESS1.0</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                               <p>Kindly contact BLESS Call Centre at 1-300-88-1020 or email us at bless1.0@icu.gov.my for any enquiries.</p>
+                            </div>
+                            <div class="modal-footer">                                
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- modal helpdesk BlESS2.0-->
+                <div class="modal fade bs-example-modal-lg" id="help-desk2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Meja Bantuan Sistem BLESS2.0</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                               <p>Kindly contact BLESS Call Centre at 1-300-88-1020 or email us at bless2.0@icu.gov.my for any enquiries.</p>
+                            </div>
+                            <div class="modal-footer">                                
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+                <!-- modal info lesen-->
+                <div class="modal fade bs-example-modal-lg" id="info-lesen" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Maklumat Lesen</h4>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div style="float: right;"><button type="button" class="btn btn-info btn-circle waves-effect text-right" data-dismiss="modal"><i class="ti-printer"></i></button></div>
+                                <div tyle="font-size: 12px">
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Nama Lesen</b></td>
+                                        <td width="10px">:</td>
+                                        <td>Perakuan Bomba<br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Aktiviti / Jenis Lesen</b></td>
+                                        <td width="10px">:</td>
+                                        <td>Sijil Perakuan Bomba<br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Tujuan / Keterangan</b></td>
+                                        <td>:</td>
+                                        <td>Untuk memastikan semua pepasangan keselamatan kebakaran berada dalam keadaan baik dan boleh berfungsi dengan baik.<br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Agensi</b></td>
+                                        <td>:</td>
+                                        <td>Jabatan Bomba &amp; Penyelamat Malaysia, Kementerian Kesejahteraan Bandar, Perumahan Dan Kerajaan Tempatan<br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Alamat</b></td>
+                                        <td>:</td>
+                                        <br><td>Jabatan Bomba &amp; Penyelamat Malaysia<br>LEBUH WAWASAN, PRESINT 7,<br>62250 PUTRAJAYA.<br><b>Tel :  </b>0388927713<br><b>Faks : </b>0388880025<br>Laman sesawang : <a href="http://www.bomba.gov.my" target="_blank">http://www.bomba.gov.my</a><br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Lokasi Permohonan Lesen</b></td>
+                                        <td>:</td>
+                                        <td>Jabatan Bomba dan Penyelamat Malaysia di peringkat Zon/Negeri<br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Syarat-Syarat Lesen</b></td>
+                                        <td>:</td>
+                                        <td class="text">
+                                        <span style="font-size: 13px !important;">-</span><br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Bayaran (Fi)/Tempoh Sah Laku Lesen</b></td>
+                                        <td>:</td>
+                                        <td>Tiada Fi.<div><br></div>
+                                        <div><b>Tempoh Sah Laku</b> : Wajib diperbaharui setiap tahun.</div>
+                                        <br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Akta &amp; Peraturan</b></td>
+                                        <td>:</td>
+                                        <td>1. Undang-undang Kecil Bangunan Seragam 1984 
+                                        2. Akta Perkhidmatan Bomba 1988 (Akta 341)
+                                        <br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Kaedah Permohonan Lesen</b></td>
+                                        <td>:</td>
+                                        <td> <a target="_blank" href="https://www.bless2.gov.my/index.php/login/">https://www.bless2.gov.my/index.php/login/</a><br><br>
+                                        </td>
+                                        </tr>
+                                        <tr valign="top" class="text">
+                                        <td width="20%"><b>Entiti Perniagaan yang Layak Memohon</b></td>
+                                        <td>:</td>
+                                        <td>Semua jenis premis yang telah ditetapkan <br><br>
+                                        </td>
+                                        </tr></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- modal tindakkan-->
+                <div class="modal fade bs-example-modal-lg" id="perlu-tindakan-login" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Perlu Tindakan</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body text-center">
+                                    <h3><i class="ti-lock"></i>  Login kali pertama ke sistem BLESS1.0! <br>Pengesahan kata laluan diperlukan.</h3>
+                                    <form>                                        
+                                        <div class="form-group">
+                                            
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        
+        
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal" onclick="actionTindakan()">Hantar</button>
+                                <button type="button" class="btn btn-info waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->    
+
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Copyright Reserved by Government of Malaysia
+
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <style>
+           .modal-dialog-license {
+    max-width: 1135px;
+    margin: 1.75rem auto;
+    overflow-y: auto;
+}
+
+            </style>
+   <script>
+       
+        function actionTindakanPembaharuan() {
+            $('#tindakan-pembaharuan').modal('hide');
+            $('#iframe-pembaharuan').modal('show');
+        }
+
+        function actionTindakanPembaharuan2() {
+            $('#tindakan-pembaharuan2').modal('hide');
+            $('#perlu-tindakan-login').modal('show');
+        }
+        
+        function actionTindakanPembatalan() {
+            $('#tindakan-pembatalan').modal('hide');
+            $('#iframe-pembatalan').modal('show');
+        }
+       
+        function actionTindakanPindaan() {
+            $('#tindakan-pindaan').modal('hide');
+            $('#iframe-pindaan').modal('show');
+        }
+        
+        function actionTindakanCetakan() {
+            $('#tindakan-cetakan').modal('hide');
+            $('#iframe-cetakan').modal('show');
+        }
+        function actionHantar() {
+            $('#tindakan-hantar').modal('show');
+        }
+        function afterSend() {
+            
+        }
+
+        function actionTindakan() {
+            $('#perlu-tindakan-login').modal('hide');
+            $('#iframe-pembaharuan').modal('show');
+        }
+        
+    </script>
+</body>
+
+</html>

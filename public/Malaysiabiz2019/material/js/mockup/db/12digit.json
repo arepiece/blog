@@ -1,0 +1,16 @@
+[
+    {
+        "agency_name":"LAM",
+        "business_type":"Sole Proprietor",
+        "professional_qualification":"Architect",
+        "12_digit":"20",
+        "active":"true"
+    },
+    {
+        "agency_name":"LAM",
+        "business_type":"Sole Proprietor",
+        "professional_qualification":"Interiror Design",
+        "12_digit":"21",
+        "active":"false"
+    }
+]

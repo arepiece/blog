@@ -1,0 +1,18 @@
+[
+    {
+        "class_code":"C-A",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "synonim_bm":"Sinonim",
+        "synonim_bi":"Synonim",
+        "active":"true"
+    },
+    {
+        "class_code":"C-B",
+        "description_bm":"Penerangan",
+        "description_bi":"description",
+        "synonim_bm":"Sinonim",
+        "synonim_bi":"Synonim",
+        "active":"true"
+    }
+]

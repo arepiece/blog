@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>MyLicense</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border logo-center">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                         <!-- dark Logo text -->
+                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <!-- Light Logo text -->    
+                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark">
+                            	<i class="ti-power-off"></i> Logout                                
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#">
+                            	<i class="ti-user"></i> Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">PERSONAL</li>
+                        <li>
+                            <a class="has-arrow" href="#">
+                            	<i class="ti-desktop"></i>
+                            	<span class="hide-menu">MyDashboard </span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">
+                            	<i class="ti-briefcase"></i>
+                            	<span class="hide-menu">MyOrganization </span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">
+                            	<i class="ti-clipboard"></i>
+                            	<span class="hide-menu">MyTray </span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">
+                            	<i class="ti-direction"></i>
+                            	<span class="hide-menu">MyTracker </span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#">
+                            	<i class="ti-id-badge"></i>
+                            	<span class="hide-menu">My License </span></a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                	<div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">MyLicense</h3>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;">BL220186</span></button>
+											<h2 <span>Kedai Runcit Abang</span></h2>
+                                         <h3 style="font-size: 12px; font-weight: 600;">Aktiviti / Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">1. Kebenaran PDA 2 bagi menjalankan aktiviti bunkering. 2.Kebenaran PDA 3 bagi menjalankan aktiviti pengangkutan bahan petroleum 3.Kebenaran PDA 4 bagi ...<a href="#">More</a></p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                        <div class="profiletimeline">
+                                        <div class="sl-left"> <img src="../assets/images/users/bless-logo.png" 
+										alt="user" class="img-circle" style="    border-radius: 0; max-width: 100px;"> </div>
+                                        <p class="card-subtitle m-b-0">
+                                        Business Licensing Electronic Support System (Bless 1.0)</p></div>
+
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Lesen</h3>
+                                        <p class="card-subtitle m-b-0">KR06789</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">30/09/2018</p>
+
+                                        <br>
+                                        <p class="card-subtitle m-b-0">
+                                        	<div class="dropdown">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                  Tindakan
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Pembaharuan</a>
+                                                  <a class="dropdown-item" href="#">Pembatalan</a>
+                                                  <a class="dropdown-item" href="#">Pindaan</a>
+                                                  <a class="dropdown-item" href="#">Cetakan</a>
+                                                </div>
+                                              </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                        	
+                             <!--display license -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;">BL220189</span></button>
+											<h2 <span>Hotel Sayang Di Sayang</span></h2>
+                                         <h3 style="font-size: 12px; font-weight: 600;">Aktiviti / Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">1. Kebenaran PDA 2 bagi menjalankan aktiviti bunkering. 2.Kebenaran PDA 3 bagi menjalankan aktiviti pengangkutan bahan petroleum 3.Kebenaran PDA 4 bagi ...<a href="#">More</a></p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                        <div class="profiletimeline">
+                                        <div class="sl-left"> <img src="../assets/images/users/bless-logo.png" 
+										alt="user" class="img-circle" style="    border-radius: 0; max-width: 100px;"> </div>
+                                        <p class="card-subtitle m-b-0">
+                                        Business Licensing Electronic Support System (Bless 1.0)</p></div>
+
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Lesen</h3>
+                                        <p class="card-subtitle m-b-0">KR06791</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">13/09/2018</p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Status Terkini</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        	<button type="button" class="btn btn-warning btn-rounded" data-toggle="modal" data-target="#perlu-tindakan">
+                                        		<i class="ti-pencil-alt"></i> Perlu Tindakan</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                        	
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;">BL22109</span></button>
+											<h2 <span>Kedai Gadget Padu</span></h2>
+                                         <h3 style="font-size: 12px; font-weight: 600;">Aktiviti / Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">1. Kebenaran PDA 2 bagi menjalankan aktiviti bunkering. 2.Kebenaran PDA 3 bagi menjalankan aktiviti pengangkutan bahan petroleum 3.Kebenaran PDA 4 bagi ...<a href="#">More</a></p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                        <div class="profiletimeline">
+                                        <div class="sl-left"> <img src="../assets/images/users/bless-logo.png" 
+										alt="user" class="img-circle" style="    border-radius: 0; max-width: 100px;"> </div>
+                                        <p class="card-subtitle m-b-0">
+                                        Business Licensing Electronic Support System (Bless 1.0)</p></div>
+
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Lesen</h3>
+                                        <p class="card-subtitle m-b-0">KR06793</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">13/10/2018</p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Status Terkini</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        	<button type="button" class="btn btn-warning btn-rounded" data-toggle="modal" data-target="#perlu-tindakan">
+                                        		<i class="ti-pencil-alt"></i> Perlu Tindakan</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                        	
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;">BL220195</span></button>
+											<h2 <span>Hotel Sayang Di Sayang 2</span></h2>
+                                         <h3 style="font-size: 12px; font-weight: 600;">Aktiviti / Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">1. Kebenaran PDA 2 bagi menjalankan aktiviti bunkering. 2.Kebenaran PDA 3 bagi menjalankan aktiviti pengangkutan bahan petroleum 3.Kebenaran PDA 4 bagi ...<a href="#">More</a></p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                        <div class="profiletimeline">
+                                        <div class="sl-left"> <img src="../assets/images/users/bless-logo.png" 
+										alt="user" class="img-circle" style="    border-radius: 0; max-width: 100px;"> </div>
+                                        <p class="card-subtitle m-b-0">
+                                        Business Licensing Electronic Support System (Bless 1.0)</p></div>
+
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Lesen</h3>
+                                        <p class="card-subtitle m-b-0">KR06795</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">30/10/2018</p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Status Terkini</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        	<button type="button" class="btn btn-warning btn-rounded" data-toggle="modal" data-target="#perlu-tindakan">
+                                        		<i class="ti-pencil-alt"></i> Perlu Tindakan</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="row">
+                    <div class="col-12">
+                        <div class="card" style="border-radius: 10px;">
+                        	
+                             <!--display licence -->
+                             <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#status-permohonan">
+                                        	<i class="ti-ticket"></i> <span style="letter-spacing: 2px;">BL22092</span></button>
+											<h2 <span>Kedai Runcit Abang 2</span></h2>
+                                         <h3 style="font-size: 12px; font-weight: 600;">Aktiviti / Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">1. Kebenaran PDA 2 bagi menjalankan aktiviti bunkering. 2.Kebenaran PDA 3 bagi menjalankan aktiviti pengangkutan bahan petroleum 3.Kebenaran PDA 4 bagi ...<a href="#">More</a></p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Agensi</h3>
+                                        <div class="profiletimeline">
+                                        <div class="sl-left"> <img src="../assets/images/users/bless-logo.png" 
+										alt="user" class="img-circle" style="    border-radius: 0; max-width: 100px;"> </div>
+                                        <p class="card-subtitle m-b-0">
+                                        Business Licensing Electronic Support System (Bless 1.0)</p></div>
+
+                                     </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 align-self-center">
+                                    <div class="card-body">
+                                       
+                                        <h3 style="font-size: 12px; font-weight: 600;">No Lesen</h3>
+                                        <p class="card-subtitle m-b-0">KR06797</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Jenis Lesen</h3>
+                                        <p class="card-subtitle m-b-0">Baharu</p>
+										
+										<h3 style="font-size: 12px; font-weight: 600;">Tamat Tempoh</h3>
+                                        <p class="card-subtitle m-b-0">15/10/2018</p>
+
+                                         <h3 style="font-size: 12px; font-weight: 600;">Status Terkini</h3>
+                                        <p class="card-subtitle m-b-0">
+                                        	<button type="button" class="btn btn-warning btn-rounded" data-toggle="modal" data-target="#perlu-tindakan">
+                                        		<i class="ti-pencil-alt"></i> Perlu Tindakan</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- sample modal content -->
+                <div class="modal fade bs-example-modal-lg" id="status-permohonan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Status Permohonan</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Maklumat Pemohon</h4>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+                <!-- sample modal content -->
+                <div class="modal fade bs-example-modal-lg" id="perlu-tindakan" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myLargeModalLabel">Perlu Tindakkan</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="test" src="http://malaysiabizuiux.gates.edu.my/en/demo/demo-bless/Re-print BLESS 2.0.html" width="100%" style="overflow: scroll;"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->	
+
+
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Copyright Reserved by Government of Malaysia
+
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+[
+    {
+        "key":"11111",
+        "license_name":"lesen_hiburan",
+        "activity_type":"Pendaftaran Francais Bagi Francaisor Tempatan dan Francaisi Induk (Seksyen 6)",
+        "category":"category_1",
+        "information":"information 1",
+        "address":"address 1",
+        "rules":"rules 1",
+        "action":"",
+        "expire_date":"01/01/2018",
+        "act_and_regulations":"Acts and regulation 1",
+        "qualified_business_entity":"Qualified Business Entity 1",
+        "online_service_url":"http://service1.com",
+        "active":"true"
+    },
+    {
+        "key":"22222",
+        "license_name":"lesen_2",
+        "activity_type":"Pendaftaran Perniagaan Francais Bagi Francaisor Tempatan dan Francaisi Induk di bawah Seksyen 6 Akta Francais 1998.",
+        "category":"category_2",
+        "information":"information 2",
+        "address":"address 2",
+        "rules":"rules 2",
+        "action":"",
+        "expire_date":"02/02/2018",
+        "act_and_regulations":"Acts and regulation 2",
+        "qualified_business_entity":"Qualified Business Entity 2",
+        "online_service_url":"http://service1.com",
+        "active":"false"
+
+    }
+]

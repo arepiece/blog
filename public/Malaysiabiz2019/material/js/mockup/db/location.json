@@ -1,0 +1,324 @@
+{
+    "state": [{
+            "code": "01",
+            "name": "Johor",
+            "active": "true"
+        },
+        {
+            "code": "02",
+            "name": "Kedah",
+            "active": "true"
+        },
+        {
+            "code": "03",
+            "name": "Kelantan",
+            "active": "true"
+        },
+        {
+            "code": "04",
+            "name": "Melaka",
+            "active": "false"
+        },
+        {
+            "code": "05",
+            "name": "Negeri Sembilan",
+            "active": "false"
+        },
+        {
+            "code": "06",
+            "name": "Pahang",
+            "active": "true"
+        },
+        {
+            "code": "07",
+            "name": "Pulau Pinang",
+            "active": "true"
+        },
+        {
+            "code": "08",
+            "name": "Perak",
+            "active": "true"
+        },
+        {
+            "code": "09",
+            "name": "Perlis",
+            "active": "true"
+        },
+        {
+            "code": "10",
+            "name": "Selangor",
+            "active": "true"
+        },
+        {
+            "code": "11",
+            "name": "Terengganu",
+            "active": "true"
+        },
+        {
+            "code": "12",
+            "name": "Sabah",
+            "active": "true"
+        },
+        {
+            "code": "13",
+            "name": "Sarawak",
+            "active": "true"
+        },
+        {
+            "code": "14",
+            "name": "Wilayah Persekutuan Kuala Lumpur",
+            "active": "true"
+        },
+        {
+            "code": "15",
+            "name": "Wilayah Persekutuan Labuan",
+            "active": "true"
+        },
+        {
+            "code": "10",
+            "name": "Wilayah Persekutuan Putrajaya",
+            "active": "true"
+        }
+    ],
+    "district": [{
+            "key": 1,
+            "name": "Batu Pahat",
+            "code": 101,
+            "state": "01",
+            "active": "true"
+        },
+        {
+            "key": 2,
+            "name": "Johor Bahru",
+            "code": 201,
+            "state": "01",
+            "active": "true"
+        },
+        {
+            "key": 3,
+            "name": "Kluang",
+            "code": 301,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 4,
+            "name": "Kota Tinggi",
+            "code": 401,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 5,
+            "name": "Kulai",
+            "code": 501,
+            "state": "01",
+            "active": "true"
+        },
+        {
+            "key": 6,
+            "name": "Mersing",
+            "code": 601,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 7,
+            "name": "Muar",
+            "code": 701,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 8,
+            "name": "Pontian",
+            "code": 801,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 9,
+            "name": "Segamat",
+            "code": 901,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 10,
+            "name": "Tangkak",
+            "code": 1001,
+            "state": "01",
+            "active": "true"
+
+        },
+        {
+            "key": 11,
+            "name": "Alor Setar",
+            "code": 102,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 12,
+            "name": "Baling",
+            "code": 202,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 13,
+            "name": "Bandar Baharu",
+            "code": 302,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 14,
+            "name": "Kuala Muda",
+            "code": 402,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 15,
+            "name": "Kubang Pasu",
+            "code": 502,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 16,
+            "name": "Kulim",
+            "code": 602,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 17,
+            "name": "Langkawi",
+            "code": 702,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 18,
+            "name": "Padang Terap",
+            "code": 802,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 19,
+            "name": "Pendang",
+            "code": 902,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 20,
+            "name": "Pokok Sena",
+            "code": 1002,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 21,
+            "name": "Sik",
+            "code": 1102,
+            "state": "02",
+            "active": "true"
+
+        },
+        {
+            "key": 22,
+            "name": "Yan",
+            "code": 1202,
+            "state": "02",
+            "active": "true"
+
+        }
+    ],
+    "city": [
+
+        {
+            
+            "code": "010101",
+            "city": "Batu Pahat",
+            "district": "Batu Pahat",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "020101",
+            "city": "Parit Raja",
+            "district": "Batu Pahat",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "030101",
+            "city": "Rengit",
+            "district": "Batu Pahat",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "040101",
+            "city": "Yong Peng",
+            "district": "Batu Pahat",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "050101",
+            "city": "Bukit Indah",
+            "district": "Johor Bahru",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "060101",
+            "city": "Gelang Patah",
+            "district": "Johor Bahru",
+            "state": "Johor",
+            "active": "true"
+           
+        },
+        {
+            
+            "code": "070101",
+            "city": "Iskandar Puteri",
+            "district": "Johor Bahru",
+            "state": "Johor",
+            "active": "true"
+           
+        }
+    ]
+
+}

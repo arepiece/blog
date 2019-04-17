@@ -1,0 +1,16 @@
+[
+    {
+        "agency":"BLESS 2.0",
+        "code":"MEI-UR-01",
+        "service_name":"Hapus Permohonan",
+        "url_path":"/pelesenan",
+        "active":"false"
+    },
+    {
+        "agency":"BLESS 2.0",
+        "code":"MEI-UR-01",
+        "service_name":"Draf Permohonan",
+        "url_path":"/perlesenan",
+        "active":"true"
+    }
+]

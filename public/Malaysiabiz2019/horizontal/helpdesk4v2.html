@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>SearchResult</title>
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+	<!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+        <!-- <script type="text/javascript" src="js/Chart.js"></script> -->
+        <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/mybiz-default-color.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border logo-center">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                       
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    </ul>
+
+				<ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="http://malaysiabizuiux.gates.edu.my/en" class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark">
+                            	<i class="ti-power-off"></i> Logout                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+                        <div class="scroll-sidebar">
+                <div class="row">
+                    <div class="col-lg-4">
+                       <img src="../assets/images/logo-mbiz.png" style=" padding:10px; width:250px;" alt="homepage">
+                    </div>
+                    <div class="col-lg-8 m-t-20">
+                        <!-- Sidebar navigation-->
+                        <nav class="sidebar-nav" style="float: right;">
+                            <ul id="sidebarnav">
+                                <li class="nav-small-cap">PERSONAL</li>
+                                <li>
+                                    <a class="has-arrow" href="#">
+                                        <i class="ti-home"></i>
+                                        <span class="hide-menu">Home </span></a>
+                                </li>
+                                <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="ti-settings"></i><span class="hide-menu">Services </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="index.html">Business Registeration</a></li>
+                                <li><a href="index2.html">Business Licensing</a></li>
+                               
+                            </ul>
+                        </li>
+                                <li>
+                                    <a class="has-arrow" href="#">
+                                        <i class="ti-gallery"></i>
+                                        <span class="hide-menu">Media </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow"href="#">
+                                        <i class="ti-comments"></i>
+                                        <span class="hide-menu">FAQ </span></a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="#">
+                                        <i class="far fa-thumbs-up"></i>
+                                        <span class="hide-menu">Feedback </span></a>
+                                </li>
+								<li>
+                                    <a class="has-arrow" href="#">
+                                        <i class="ti-user"></i>
+                                        <span class="hide-menu">Register </span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid" style="padding: 0 50px;">
+
+
+                    <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Helpdesk</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Helpdesk</li>
+                        </ol>
+                    </div>
+              
+                </div>
+
+                    <div class="row">
+                    <div class="col-12">
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light"><div class="round round-lg align-self-center round-info"><i class="ti-wallet"></i></div>1MOCC</h3>
+                                        <h6 class="text-muted m-b-0">No. Telefon & SMS +603-8000 8000 No. Fax +603-8000 8001 Emel 80008000@1mocc.gov.my Facebook https://www.facebook.com/1mocc Twitter https://twitter.com/myGovPortal Laman Web https://www.malaysia.gov.my</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-warning"><i class="mdi mdi-cellphone-link"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">No Tel</h3>
+                                        <h5 class="text-muted m-b-0">03-8000-8000</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht"><div class="round round-lg align-self-center round-primary"><i class="mdi mdi-cart-outline"></i></div>e-mail</h3>
+                                        <h6 class="text-muted m-b-0">malaysiabiz@mampu.gov.my</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht"><div class="round round-lg align-self-center round-danger"><i class="mdi mdi-bullseye"></i></div>e-Support</h3>
+                                        <p>
+                                        <div class = "row" >
+                                        <h5 class="text-muted m-b-0"><button type="button" class="btn waves-effect waves-light btn-xs btn-info">Open Ticket</button></h5>   &nbsp;
+                                        <h5 class="text-muted m-b-0"><button type="button" class="btn waves-effect waves-light btn-xs btn-info">Check Ticket Status</button></h5>
+                                    </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+<div class="card">
+                <div class="table-responsive">
+                    <div><p><h5>Helpdesk Operating Hours Monday to Friday 8:00am to 8:00pm Saturdays: 8:00am to 2:00pm Excluding public holidays</h5>
+                    <h5>List of Agency Helpdesk</h5></p></div>
+                                        <table id="demo-foo-addrow" class="table m-t-30 table-hover no-wrap contact-list footable-loaded footable" data-page-size="10">
+                                            <thead>
+                                                <tr>
+                                                    <th class="footable-sortable">Agency<span class="footable-sort-indicator"></span></th>
+                                                    <th class="footable-sortable">Telephone<span class="footable-sort-indicator"></span></th>
+                                                    <th class="footable-sortable">Email<span class="footable-sort-indicator"></span></th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="footable-even" style="">
+                                                    <td><span class="footable-toggle"></span>BLESS</td>
+                                                    <td>
+                                                         +603-3889000
+                                                    </td>
+                                                    <td>genelia@gmail.com</td>
+                                                    <
+                                                </tr>
+                                                <tr class="footable-odd" style="">
+                                                    <td><span class="footable-toggle"></span>JAKIM</td>
+                                                    <td>
+                                                       +603-6539875
+                                                    </td>
+                                                    <td>arijit@gmail.com</td>
+                                                    
+                                                </tr>
+                                                <tr class="footable-even" style="">
+                                                    <td><span class="footable-toggle"></span>MBPP</td>
+                                                    <td>
+                                                     +603-3865397
+                                                    </td>
+                                                    <td>govinda@gmail.com</td>
+                                                   
+                                                </tr>
+                                                
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+
+                                </div>
+               
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+			            
+		<!-- Floating button -->
+	
+		
+		
+										
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->	
+
+
+                <!-- sample modal content -->
+               
+
+
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Copyright Reserved by Government of Malaysia
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+  <script type="text/javascript">
+                                jQuery(document).ready(function(e) {
+                                    $("#addquestion").on("click", function(){
+                            
+                                     alert('ss');
+                                });
+                            </script>
+
+</body>
+
+</html>

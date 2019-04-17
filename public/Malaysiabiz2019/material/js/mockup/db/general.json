@@ -1,0 +1,76 @@
+{
+    "agensi":{
+        "lam":{
+            "name":"Lembaga Arkitek Malaysia",
+            "link_info":{
+                "partnership":"lam_partnership.html",
+                "sole_proprietor":"lam_sole_proprieter.html"
+            }
+        },
+        "ljbm":{
+            "name":"Lembaga Jurukur Bahan Malaysia"
+        },
+        "ljtm":{
+            "name":"Lembaga Jurukur Tanah Malaysia"
+        }
+    },
+    "professional_qualification":{
+        "consulting_qs":"Consulting QS",
+        "interior_designer":"Interior Designer",
+        "architect":"Architect",
+        "jurukur_tanah_berlesen":"Jurukur Tanah Berlesen",
+        "engineering_consultancy_practice":"Engineering Consultancy Practise",
+        "practising_ceritificate":"Practising Certificate"
+    },
+    "business_type":{
+        "tunggal":"Tunggal",
+        "professional":"Professional",
+        "sole_proprietor":"Sole Proprietor",
+        "partnership":"Partnership",
+        "sdn_bhd":"Sdn Bhd",
+        "limited_liability_partnerhip":"Limited Liability Partnership",
+        "multi_Disciplinary":"Multi-Disciplinary",
+        "body_corporate":"Body Corporate",
+        "joint_venture":"Joint venture",
+        "consortium":"Consortium"
+    },
+    "license_name":{
+        "lesen_hiburan":"Pendaftaran Francais Bagi Francaisor Tempatan dan Francaisi Induk (Seksyen 6)",
+        "lesen_2":"Lesen 2",
+        "lesen_3":"Lesen 3",
+        "lesen_4":"Lesen 4"
+    },
+    "license_categories":{
+        "category_1":{
+            "name":"Wajib",
+            "link_info":{
+                "kpdnkk":"kpdnkk.html"
+            }
+        },
+        "category_2":{
+            "name":"Categori 2",
+            "link_info":{
+                "kpdnkk":"kpdnkk.html"
+            }
+        },
+        "category_3":{
+            "name":"Categori 3",
+            "link_info":{
+                "kpdnkk":"kpdnkk.html"
+            }
+        },
+        "category_4":{
+            "name":"Categori 4",
+            "link_info":{
+                "kpdnkk":"kpdnkk.html"
+            }
+        },
+        "category_5":{
+            "name":"Categori 5",
+            "link_info":{
+                "kpdnkk":"kpdnkk.html"
+            }
+        }
+    }
+   
+}
