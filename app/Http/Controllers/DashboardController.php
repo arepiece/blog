@@ -33,4 +33,10 @@ class DashboardController extends Controller
         
         return view('Dashboard.index');
     }
+    
+    public function employee()
+    {
+        
+        return view('Dashboard.employee');
+    }
 }

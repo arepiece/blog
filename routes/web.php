@@ -25,3 +25,4 @@ Route::post('/add', array('as' => 'add_new_post', 'uses' => 'PostsController@pos
 Route::post('/login', array('as' => 'login', 'uses' => 'UsersController@postLogin'));
 Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@getLogout'));
 Route::get('/dashboard', array('as' => 'logout', 'uses' => 'DashboardController@Dashboard'));
+Route::get('/employee', array('as' => 'logout', 'uses' => 'DashboardController@employee'));
