@@ -26,3 +26,4 @@ Route::post('/login', array('as' => 'login', 'uses' => 'UsersController@postLogi
 Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@getLogout'));
 Route::get('/dashboard', array('as' => 'logout', 'uses' => 'DashboardController@Dashboard'));
 Route::get('/employee', array('as' => 'logout', 'uses' => 'DashboardController@employee'));
+Route::post('/addemployee', array('as' => 'logout', 'uses' => 'DashboardController@addemployee'));

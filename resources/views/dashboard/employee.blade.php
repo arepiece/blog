@@ -358,34 +358,38 @@
                                                                     <h4 class="modal-title" id="myModalLabel">Add New Contact</h4>
                                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                                                 </div>
+                                                                <form method="post" action="{{url('/addemployee')}}" enctype="multipart/form-data" class="form-horizontal form-material">
+                                                                {{ csrf_field() }}
+
                                                                 <div class="modal-body">
-                                                                    <from class="form-horizontal form-material">
+                                                                 
                                                                         <div class="form-group">
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Type name"> </div>
+                                                                                <input name="name2" type="text" class="form-control" placeholder="Type name"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Email"> </div>
+                                                                                <input name="email" type="text" class="form-control" placeholder="Email"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Phone"> </div>
+                                                                                <input name="phone" type="number" class="form-control" placeholder="Phone"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Designation"> </div>
+                                                                                <input name="designation" type="text" class="form-control" placeholder="Designation"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Age"> </div>
+                                                                                <input name="age" type="number" class="form-control" placeholder="Age"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Date of joining"> </div>
+                                                                                <input name="datejoin" type="text" class="form-control mydatepicker" placeholder="Date of joining"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input type="text" class="form-control" placeholder="Salary"> </div>
+                                                                                <input name="salary" type="number" class="form-control" placeholder="Salary"> </div>
                                                                             <div class="col-md-12 m-b-20">
                                                                                 <div class="fileupload btn btn-danger btn-rounded waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Upload Contact Image</span>
-                                                                                    <input type="file" class="upload"> </div>
+                                                                                    <input name="avatar" type="file" class="upload"> </div>
                                                                             </div>
                                                                         </div>
-                                                                    </from>
+                                                                  
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Save</button>
-                                                                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancel</button>
+                                                                   <button type="submit" class="btn btn-primary">Add</button>
+                                                                   <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancel</button>
                                                                 </div>
+                                                                          </from>
                                                             </div>
                                                             <!-- /.modal-content -->
                                                         </div>
@@ -480,3 +484,18 @@
             <!-- ============================================================== -->
         </div>
 @endsection
+@section('scripts')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#submitBtn").click(function(){     
+        alert('sssss');
+//        $("#myForm").submit(); // Submit the form
+         $(this).submit();
+    });
+    
+   $("form").submit(function(){
+  });
+});
+</script>
+@stop

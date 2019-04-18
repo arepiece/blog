@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="_token" content="{{csrf_token()}}" />
      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -602,6 +603,7 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="/Malaysiabiz2019/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    @yield('scripts')
 </body>
 
 </html>
