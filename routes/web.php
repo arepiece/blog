@@ -27,3 +27,4 @@ Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@getLogo
 Route::get('/dashboard', array('as' => 'logout', 'uses' => 'DashboardController@Dashboard'));
 Route::get('/employee', array('as' => 'logout', 'uses' => 'DashboardController@employee'));
 Route::post('/addemployee', array('as' => 'logout', 'uses' => 'DashboardController@addemployee'));
+Route::get('/deleteemployee/{id}', array('as' => 'logout', 'uses' => 'DashboardController@deleteemployee'));

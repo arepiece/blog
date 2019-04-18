@@ -135,21 +135,23 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/1.jpg" alt="user" class="img-circle" /> Genelia Deshmukh</a>
-                                                    </td>
-                                                    <td>genelia@gmail.com</td>
-                                                    <td>+123 456 789</td>
-                                                    <td><span class="label label-danger">Designer</span> </td>
-                                                    <td>23</td>
-                                                    <td>12-10-2014</td>
-                                                    <td>$1200</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
-                                                    </td>
-                                                </tr>
+                                                @foreach($lesens as $lesen)
+                                                    <tr>
+                                                        <td>{{ $loop->iteration }} .</td>
+                                                        <td>
+                                                            <a href="app-contact-detail.html"><img src="images/{{$lesen->avatar}}" alt="user" class="img-circle" />{{$lesen->name}}</a>
+                                                        </td>
+                                                        <td>{{$lesen->email}}</td>
+                                                        <td>{{$lesen->phone}}</td>
+                                                        <td><span class="label label-danger">{{$lesen->role}}</span> </td>
+                                                        <td>{{$lesen->age}}</td>
+                                                        <td>{{$lesen->joindate}}</td>
+                                                        <td>${{$lesen->salary}}</td>
+                                                        <td>
+                                                            <a href="/deleteemployee/{{$lesen->id}}" type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                                 <tr>
                                                     <td>2</td>
                                                     <td>
