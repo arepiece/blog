@@ -47,7 +47,6 @@ class DashboardController extends Controller
         DB::table('employee')->where('id', $id)
                 ->delete();
         return redirect('employee');
-//        return view('Dashboard.employee');
     }
     
     public function addemployee(Request $request)

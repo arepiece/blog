@@ -1,6 +1,26 @@
 @extends('layouts.master')
 
 @section('title', 'Page Title')
+@push('custom-link')
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/Malaysiabiz2019//assets/images/favicon.png">
+    <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/Malaysiabiz2019//assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Footable CSS -->
+    <link href="/Malaysiabiz2019//assets/plugins/footable/css/footable.core.css" rel="stylesheet">
+    <link href="/Malaysiabiz2019//assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="/Malaysiabiz2019/horizontal/css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="/Malaysiabiz2019/horizontal/css/colors/blue.css" id="theme" rel="stylesheet">
+@endpush
 
 @section('sidebar')
     @parent
@@ -155,7 +175,7 @@
                                                 <tr>
                                                     <td>2</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/2.jpg" alt="user" class="img-circle" /> Arijit Singh</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/2.jpg" alt="user" class="img-circle" /> Arijit Singh</a>
                                                     </td>
                                                     <td>arijit@gmail.com</td>
                                                     <td>+234 456 789</td>
@@ -170,7 +190,7 @@
                                                 <tr>
                                                     <td>3</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/3.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/3.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
                                                     </td>
                                                     <td>govinda@gmail.com</td>
                                                     <td>+345 456 789</td>
@@ -185,7 +205,7 @@
                                                 <tr>
                                                     <td>4</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/4.jpg" alt="user" class="img-circle" /> Hritik Roshan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/4.jpg" alt="user" class="img-circle" /> Hritik Roshan</a>
                                                     </td>
                                                     <td>hritik@gmail.com</td>
                                                     <td>+456 456 789</td>
@@ -200,7 +220,7 @@
                                                 <tr>
                                                     <td>5</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/5.jpg" alt="user" class="img-circle" /> John Abraham</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/5.jpg" alt="user" class="img-circle" /> John Abraham</a>
                                                     </td>
                                                     <td>john@gmail.com</td>
                                                     <td>+567 456 789</td>
@@ -215,7 +235,7 @@
                                                 <tr>
                                                     <td>6</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/6.jpg" alt="user" class="img-circle" /> Pawandeep kumar</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/6.jpg" alt="user" class="img-circle" /> Pawandeep kumar</a>
                                                     </td>
                                                     <td>pawandeep@gmail.com</td>
                                                     <td>+678 456 789</td>
@@ -230,7 +250,7 @@
                                                 <tr>
                                                     <td>7</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/7.jpg" alt="user" class="img-circle" /> Ritesh Deshmukh</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/7.jpg" alt="user" class="img-circle" /> Ritesh Deshmukh</a>
                                                     </td>
                                                     <td>ritesh@gmail.com</td>
                                                     <td>+123 456 789</td>
@@ -245,7 +265,7 @@
                                                 <tr>
                                                     <td>8</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/8.jpg" alt="user" class="img-circle" /> Salman Khan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/8.jpg" alt="user" class="img-circle" /> Salman Khan</a>
                                                     </td>
                                                     <td>salman@gmail.com</td>
                                                     <td>+234 456 789</td>
@@ -260,7 +280,7 @@
                                                 <tr>
                                                     <td>9</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/1.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/1.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
                                                     </td>
                                                     <td>govinda@gmail.com</td>
                                                     <td>+345 456 789</td>
@@ -275,7 +295,7 @@
                                                 <tr>
                                                     <td>10</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/2.jpg" alt="user" class="img-circle" /> Sonu Nigam</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/2.jpg" alt="user" class="img-circle" /> Sonu Nigam</a>
                                                     </td>
                                                     <td>sonu@gmail.com</td>
                                                     <td>+456 456 789</td>
@@ -290,7 +310,7 @@
                                                 <tr>
                                                     <td>11</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/3.jpg" alt="user" class="img-circle" /> Varun Dhawan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/3.jpg" alt="user" class="img-circle" /> Varun Dhawan</a>
                                                     </td>
                                                     <td>varun@gmail.com</td>
                                                     <td>+567 456 789</td>
@@ -305,7 +325,7 @@
                                                 <tr>
                                                     <td>12</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/4.jpg" alt="user" class="img-circle" /> Genelia Deshmukh</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/4.jpg" alt="user" class="img-circle" /> Genelia Deshmukh</a>
                                                     </td>
                                                     <td>genelia@gmail.com</td>
                                                     <td>+123 456 789</td>
@@ -320,7 +340,7 @@
                                                 <tr>
                                                     <td>13</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/5.jpg" alt="user" class="img-circle" /> Arijit Singh</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/5.jpg" alt="user" class="img-circle" /> Arijit Singh</a>
                                                     </td>
                                                     <td>arijit@gmail.com</td>
                                                     <td>+234 456 789</td>
@@ -335,7 +355,7 @@
                                                 <tr>
                                                     <td>14</td>
                                                     <td>
-                                                        <a href="app-contact-detail.html"><img src="../assets/images/users/6.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
+                                                        <a href="app-contact-detail.html"><img src="/Malaysiabiz2019/assets/images/users/6.jpg" alt="user" class="img-circle" /> Govinda jalan</a>
                                                     </td>
                                                     <td>govinda@gmail.com</td>
                                                     <td>+345 456 789</td>
@@ -377,7 +397,8 @@
                                                                             <div class="col-md-12 m-b-20">
                                                                                 <input name="age" type="number" class="form-control" placeholder="Age"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                                                                <input name="datejoin" type="text" class="form-control mydatepicker" placeholder="Date of joining"> </div>
+                                      <input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">
+                                                                                <input name="datejoin" type="text" class="form-control complex-colorpicker" placeholder="Date of joining"> </div>
                                                                             <div class="col-md-12 m-b-20">
                                                                                 <input name="salary" type="number" class="form-control" placeholder="Salary"> </div>
                                                                             <div class="col-md-12 m-b-20">
@@ -443,28 +464,28 @@
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="/Malaysiabiz2019/assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                                 </li>
                             </ul>
                         </div>
@@ -486,9 +507,37 @@
             <!-- ============================================================== -->
         </div>
 @endsection
+
 @section('scripts')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="/Malaysiabiz2019/assets/plugins/jquery.sparkline.min.js"></script>-->
+       <script src="/Malaysiabiz2019//assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="/Malaysiabiz2019/assets/plugins/popper/popper.min.js"></script>
+    <script src="/Malaysiabiz2019/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="/Malaysiabiz2019/horizontal/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="/Malaysiabiz2019/horizontal/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="/Malaysiabiz2019/horizontal/js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="/Malaysiabiz2019/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="/Malaysiabiz2019/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="/Malaysiabiz2019/horizontal/js/custom.min.js"></script>
+    <!-- Footable -->
+    <script src="/Malaysiabiz2019/assets/plugins/footable/js/footable.all.min.js"></script>
+    <script src="/Malaysiabiz2019/assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+    <!--FooTable init-->
+    <script src="/Malaysiabiz2019/horizontal/js/footable-init.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="/Malaysiabiz2019/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
 <script>
+//      jQuery('.mydatepicker, #datepicker').datepicker();
 $(document).ready(function(){
     $("#submitBtn").click(function(){     
         alert('sssss');
@@ -498,6 +547,8 @@ $(document).ready(function(){
     
    $("form").submit(function(){
   });
+  
+//    jQuery('.mydatepicker, #datepicker').datepicker();
 });
 </script>
 @stop
