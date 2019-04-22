@@ -20,6 +20,7 @@
     <link href="/Malaysiabiz2019/horizontal/css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="/Malaysiabiz2019/horizontal/css/colors/blue.css" id="theme" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 @endpush
 
 @section('sidebar')
@@ -136,7 +137,7 @@
                                             <div class="align-self-center">
                                                 <h4 class="card-title m-t-10">Contacts / Employee List </h4></div>
                                             <div class="ml-auto">
-                                                <input type="text" id="demo-input-search2" placeholder="search contacts" class="form-control"> </div>
+                                                <!--<input type="text" id="demo-input-search2" placeholder="search contacts" class="form-control"> </div>-->
                                         </div>
                                     </div>
                                     <div class="table-responsive">
@@ -397,8 +398,7 @@
                                                                             <div class="col-md-12 m-b-20">
                                                                                 <input name="age" type="number" class="form-control" placeholder="Age"> </div>
                                                                             <div class="col-md-12 m-b-20">
-                                      <input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">
-                                                                                <input name="datejoin" type="text" class="form-control complex-colorpicker" placeholder="Date of joining"> </div>
+                                                                            <input name="datejoin" type="text" class="form-control mydatepicker" id="datepicker-autoclose" placeholder="mm/dd/yyyy"></div>
                                                                             <div class="col-md-12 m-b-20">
                                                                                 <input name="salary" type="number" class="form-control" placeholder="Salary"> </div>
                                                                             <div class="col-md-12 m-b-20">
@@ -535,10 +535,14 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="/Malaysiabiz2019/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="/Malaysiabiz2019//assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
 
 <script>
-//      jQuery('.mydatepicker, #datepicker').datepicker();
+      jQuery('.mydatepicker, #datepicker').datepicker();
 $(document).ready(function(){
+    $('#demo-foo-addrow').DataTable();
     $("#submitBtn").click(function(){     
         alert('sssss');
 //        $("#myForm").submit(); // Submit the form
