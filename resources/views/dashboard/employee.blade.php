@@ -160,7 +160,7 @@
                                                     <tr>
                                                         <td>{{ $loop->iteration }} .</td>
                                                         <td>
-                                                            <a href="app-contact-detail.html"><img src="images/{{$lesen->avatar}}" alt="user" class="img-circle" />{{$lesen->name}}</a>
+                                                            <a href="/editemployee/{{$lesen->id}}"><img src="images/{{$lesen->avatar}}" alt="user" class="img-circle" />{{$lesen->name}}</a>
                                                         </td>
                                                         <td>{{$lesen->email}}</td>
                                                         <td>{{$lesen->phone}}</td>

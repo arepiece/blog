@@ -42,6 +42,31 @@ class DashboardController extends Controller
         return view('Dashboard.employee', compact('lesens'));
     }
     
+    public function editemployee($id)
+    { 
+        $lesens = DB::table('employee')
+                ->where('id',$id)
+                ->first();
+        return view('Dashboard.profile', compact('lesens'));
+    }
+    
+    public function editemployeeprocess(Request $request,$id)
+    { 
+//        dd('ss');
+         $input = $request->all(); 
+        
+             DB::table('employee')
+              ->where('id', $id)
+              ->update([
+                'name' => $input['name2'],
+
+              ]);
+//        $lesens = DB::table('employee')
+//                ->where('id',$id)
+//                ->first();
+//        return view('Dashboard.profile', compact('lesens'));
+    }
+    
     public function deleteemployee($id)
     { 
         DB::table('employee')->where('id', $id)

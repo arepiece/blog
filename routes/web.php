@@ -28,3 +28,6 @@ Route::get('/dashboard', array('as' => 'logout', 'uses' => 'DashboardController@
 Route::get('/employee', array('as' => 'logout', 'uses' => 'DashboardController@employee'));
 Route::post('/addemployee', array('as' => 'logout', 'uses' => 'DashboardController@addemployee'));
 Route::get('/deleteemployee/{id}', array('as' => 'logout', 'uses' => 'DashboardController@deleteemployee'));
+Route::get('/editemployee/{id}', array('as' => 'logout', 'uses' => 'DashboardController@editemployee'));
+Route::post('/editemployeeprocess/{id}', array('as' => 'logout', 'uses' => 'DashboardController@editemployeeprocess'));
+
