@@ -42,6 +42,13 @@ class DashboardController extends Controller
         return view('Dashboard.employee', compact('lesens'));
     }
     
+    public function notification()
+    { 
+//        $lesens = DB::table('employee')->get();
+//        dd($lesens);
+        return view('notification.notification');
+    }
+    
     public function editemployee($id)
     { 
         $lesens = DB::table('employee')

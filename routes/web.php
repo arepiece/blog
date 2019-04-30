@@ -31,3 +31,10 @@ Route::get('/deleteemployee/{id}', array('as' => 'logout', 'uses' => 'DashboardC
 Route::get('/editemployee/{id}', array('as' => 'logout', 'uses' => 'DashboardController@editemployee'));
 Route::post('/editemployeeprocess/{id}', array('as' => 'logout', 'uses' => 'DashboardController@editemployeeprocess'));
 
+Route::get('/notification', array('as' => 'admin_area', 'uses' => 'DashboardController@notification'));
+
+Route::get('/test', function () {
+    event(new App\Events\StatusLiked('Someone'));
+    return "Event has been sent!";
+});
+
