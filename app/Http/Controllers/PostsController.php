@@ -4,50 +4,51 @@ namespace App\Http\Controllers;
 
 //use App\Posts;
 use App\Post;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\PostCollection;
 
 class PostsController extends Controller
 {
-    
-     public function getIndex()
-  {
+    public function store(Request $request)
+    {
+      $post = new Post([
+        'title' => $request->get('title'),
+        'content' => $request->get('content')
+      ]);
+
+      $post->save();
+
+      return response()->json('successfully added');
+    }
+
+    public function index()
+    {
+      return new PostCollection(Post::all());
+    }
+
+    public function edit($id)
+    {
+      $post = Post::find($id);
+      return response()->json($post);
+    }
+
+    public function update($id, Request $request)
+    {
+      $post = Post::find($id);
+
+      $post->update($request->all());
+
+      return response()->json('successfully updated');
+    }
+
+    public function delete($id)
+    {
+      $post = Post::find($id);
+
+      $post->delete();
+
+      return response()->json('successfully deleted');
+    }
   
-  $posts = Post::with('Author')-> orderBy('id', 'DESC')->get();
-         
-//         $posts =DB::table('users')with('Author')-> orderBy('id', 'DESC')->get();
-//   return view('greeting', ['name' => 'James']);
-   
-    return view('index', compact('posts'));
-//  return View::make('index')->with('posts',$posts);
-  
-  }
-  
-   public function dashboard()
-  {
-       dd('ss');
-  
-  }
-//  public function getAdmin()
-//  {
-//  return View::make('addpost');
-//  }
-//  public function postAdd()
-//  {
-//  Post::create(array(
-//              'title' => Input::get('title'),
-//              'content' => Input::get('content'),
-//              'author_id' => Auth::user()->id
-//   ));
-//  return Redirect::route('index');
-//  }
-    /**
-     * Show the profile for the given user.
-     *
-     * @param  int  $id
-     * @return View
-     */
-//    public function show($id)
-//    {
-//        return view('user.profile', ['user' => User::findOrFail($id)]);
-//    }
 }

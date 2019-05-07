@@ -38,3 +38,7 @@ Route::get('/test', function () {
     return "Event has been sent!";
 });
 
+Route::get('/vue/{any}', function () {
+  return view('post');
+})->where('any', '.*');
+
