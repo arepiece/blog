@@ -1902,7 +1902,7 @@ __webpack_require__.r(__webpack_exports__);
 
     var uri = "http://test-a.gov/api/post/edit/".concat(this.$route.params.id);
     this.axios.get(uri).then(function (response) {
-      _this.post = response.data;
+      _this.post = response.data; //            console.log('dddd');
     });
   },
   methods: {
@@ -38212,19 +38212,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.post.body,
-                    expression: "post.body"
+                    value: _vm.post.content,
+                    expression: "post.content"
                   }
                 ],
                 staticClass: "form-control",
                 attrs: { rows: "5" },
-                domProps: { value: _vm.post.body },
+                domProps: { value: _vm.post.content },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.$set(_vm.post, "body", $event.target.value)
+                    _vm.$set(_vm.post, "content", $event.target.value)
                   }
                 }
               })
@@ -38347,7 +38347,7 @@ var render = function() {
             _vm._v(" "),
             _c("td", [_vm._v(_vm._s(post.title))]),
             _vm._v(" "),
-            _c("td", [_vm._v(_vm._s(post.body))]),
+            _c("td", [_vm._v(_vm._s(post.content))]),
             _vm._v(" "),
             _c(
               "td",

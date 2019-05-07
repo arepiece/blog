@@ -14,7 +14,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label>Post Body:</label>
-              <textarea class="form-control" v-model="post.body" rows="5"></textarea>
+              <textarea class="form-control" v-model="post.content" rows="5"></textarea>
             </div>
           </div>
         </div><br />
@@ -37,6 +37,7 @@
         let uri = `http://test-a.gov/api/post/edit/${this.$route.params.id}`;
         this.axios.get(uri).then((response) => {
             this.post = response.data;
+//            console.log('dddd');
         });
       },
       methods: {

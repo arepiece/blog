@@ -10,7 +10,8 @@ class Post extends Model {
 
 protected $table = 'posts';
 
-protected $fillable = array('title','content','author_id');
+//protected $fillable = array('title','content','author_id');
+protected $fillable = ['title', 'content'];
 
 public $timestamps = true;
 
